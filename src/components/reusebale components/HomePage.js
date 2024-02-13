@@ -1,26 +1,19 @@
 import React, { useEffect,useState } from 'react';
-// import HomeCard from '../../reusebale components/HomeCard';
+import HomeCard from '../reusebale components/HomeCard';
 import profile from '../images/profile.png';
 import dropdown from '../images/dropdown.png';
 import filter from '../images/filter.png';
 import date from '../images/calender.png';
 import { Link } from 'react-router-dom';
-import HomeCard from '../reusebale components/HomeCard';
 
-const Infulincer = () => {
+const HomePage = ({Category3,Category4,propsdata}) => {
   const [showCount, setShowCount] = useState(3); // State to store the selected option
 
   const handleShowChange = (event) => {
     setShowCount(parseInt(event.target.value, 10));
   };
 
-  const propsdata = {
-    name: "Hazel Finch",
-    profile: profile,
-    brandname: "Male",
-    date: "Oct 10,2023",
-    type: "Fashion"
-  };
+ 
 
   useEffect(() => {
     // Set the default value of showCount to 7 when the component mounts
@@ -56,15 +49,15 @@ const Infulincer = () => {
           </div>
           <hr />
           <div className="row main-labels mx-5">
-            <div className="col-md-3 text-start ps-5 name"><p>Name</p></div>
-            <div className="col-md-2 text-start"><p>Date</p></div>
-            <div className="col-md-2"><p>Gender</p></div>
-            <div className="col-md-2 text-end"><p>Category</p></div>
-            <div className="col-md-3 text-end pe-4 action"><p>Action</p></div>
+            <div className="col-md-3 name"><p>Name</p></div>
+            <div className="col-md-2"><p>Date</p></div>
+            <div className="col-md-2"><p>{Category3}</p></div>
+            <div className="col-md-2"><p>{Category4}</p></div>
+            <div className="col-md-3 action"><p>Action</p></div>
           </div>
           {/* users data importing from usercard.js */}
           {[...Array(showCount)].map((_, index) => (
-            <Link className='Link' to="/InfluincerUser" key={index}><HomeCard {...propsdata} /></Link>
+            <Link className='Link' to="/User" key={index}><HomeCard {...propsdata} /></Link>
           ))}
           {/* main footer */}
           <div className="row px-5 d-flex mt-3">
@@ -86,4 +79,4 @@ const Infulincer = () => {
   );
 }
 
-export default Infulincer;
+export default HomePage;

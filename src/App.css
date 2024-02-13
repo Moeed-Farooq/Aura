@@ -3,7 +3,15 @@ body{
   color: black;
   display: block;
 }
+.Link{
+  text-decoration: none;
+}
 
+.chart-btn{
+  opacity: 30%;
+background-color: #6A50B2;
+color: white;
+}
 /* Media query to hide content when screen is less than 1300px */
 @media (max-width: 1299px) {
   body {
@@ -26,9 +34,9 @@ body{
   color: black;
 }
 .logo img{
-  width: 44px;
-  height: 50px;
-  margin-top: 12px;
+  width: 34px;
+  height: 40px;
+  margin-top: 17px;
   margin-right: 12px;
 }
 .logo p{
@@ -91,13 +99,13 @@ margin-right: 50px;
   display: flex;
 }
 .sidebar{
-  width: 20%;
+  width: 17%;
   height: 100%;
   background:linear-gradient(#4F99DD,#6A50B2);
   border-radius: 0px 40px 0px 0px;
 }
 .components{
-  width: 80%;
+  width: 83%;
   background-color: white ;
   padding: 0px 10px 10px 10px;
  
@@ -145,17 +153,19 @@ overflow: hidden;
   color: #8B8B8B;
 }
 
-.main-labels div{
-background-color: #6A50B2;
-opacity: 50%;
-text-align: center;
-color: white;
-
-padding: 10px 0px 10px 0px;
+.main-labels {
+  background-color: rgba(128, 105, 189, 0.5); /* RGB color with 50% opacity */
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  border-radius: 10px;
 }
-.main-labels p{
-  margin: 0px;
-  padding: 0px;  
+
+.main-labels p {
+  margin: 0;
+  color: #6A50B2;
+  padding: 0;
+  opacity: 1; /* You can set this to 1 if you want full opacity for the text */
 }
 .name{
   border-radius: 15px 0px 0px 15px;
@@ -197,6 +207,44 @@ padding: 10px 0px 10px 0px;
 
  /* Main.js css ends here */
 
+ /* chat css */
+ .chatContainer{
+  display: flex;
+ }
+ .user2{
+display: flex;
+justify-content: end;
+text-align: end;
+}
+.user2Msg{
+  width: 60%;
+  color: white;
+  padding: 10px;
+  background:linear-gradient(#4F99DD,#6A50B2);
+  padding-left: 15px;
+  border-radius: 20px 0px 20px 20px;
+}
+.user2Msg p{
+  margin: 0px;
+}
+
+
+.user1{
+  display: flex;
+}
+.user1Msg{
+  width: 60%;
+  color: white;
+  padding: 10px;
+  padding-left: 15px;
+  background:linear-gradient(#4F99DD,#6A50B2);
+  border-radius: 0px 20px 20px 20px;
+}
+.user1Msg p{
+  margin: 0px;
+}
+
+
  .orders{
   background-color: #b9aed4;
  align-items: center;
@@ -206,3 +254,392 @@ padding: 10px 0px 10px 0px;
   width: 90px;
   height: 90px;
  }
+ input{
+  border: 1px solid #b9aed4;
+ }
+
+ /* adminpage css */
+ .AddAdminBtn{
+  background:linear-gradient(#4F99DD,#6A50B2);
+color: white;
+margin-right: 25px; 
+padding: 5px 20px 5px 20px;
+border-radius: 10px;
+}
+
+ .createAdmin div input{
+  border-radius: 10px;
+  background-color: white;
+ }
+ .createAdmin div select{
+border-radius: 10px;
+ }
+ .createAdmin div p{
+  font-weight: 500;
+  font-size: 25px;
+
+ }
+ .adminImage img{
+  width: 200px;
+  height: 200px;
+ }
+ .adminEditData p{
+  font-size: 23px;
+  font-weight: 500;
+ }
+ .adminEditData p span{
+  color: #8B8B8B;
+  font-weight: 400;
+ }
+ .editAdminBtn{
+  margin-top: 30px;
+ }
+ .editAdminBtn button:nth-child(1){
+  background-color: white;
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+  margin-left: 20px;
+
+}
+.editAdminBtn button:nth-child(2){
+  background:linear-gradient(#4F99DD,#6A50B2);
+  color: white;
+  padding: 10px 50px 10px 50px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.Createbtn{
+ color: white;
+  background:linear-gradient(#4F99DD,#6A50B2);
+}
+
+/* reoprts css */
+
+.ReportsBtn{
+  display: flex;
+  justify-content: space-evenly;
+}
+.userreportimg{
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+.userreportimg img{
+  height: 150px;
+  width: 150px;
+}
+
+.userreportData p{
+  padding-left: 0px;
+  font-size: 15px;
+  font-weight: 500;
+margin-bottom: 5px;
+}
+.userreportData p span{
+  font-size: 15px;
+  font-weight: 400;
+  color: #8B8B8B;
+}
+.reportstatus{
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.reportstatus p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.reportstatus p span{
+  font-size: 15px;
+  font-weight: 400;
+  color: #8B8B8B;
+}
+.userReportBtn {
+  margin-top:100px;
+  display: flex;
+  justify-content: space-between;
+}
+.userReportBtn button:nth-child(1){
+  background-color: white;
+  color: black;
+  padding: 5px 25px 5px 25px;
+  border-radius: 10px;
+  margin-left: 25px;
+
+}
+.userReportBtn button:nth-child(2){
+  background:linear-gradient(#4F99DD,#6A50B2);
+  color: black;
+  padding: 5px 25px 5px 25px;
+  border-radius: 10px;
+  margin-right: 25px;
+  color: white;
+
+
+}
+
+/* UserVerification css */
+.userverificationtimg{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}
+.userverificationtimg img{
+  height: 180px;
+  width: 180px;
+}
+.userverificationtimg p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.userVerificationData p{
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: 500;
+
+margin-bottom: 15px;
+}
+.userVerificationData p span{
+  font-size: 15px;
+  font-weight: 400;
+  color: #8B8B8B;
+}
+.usermsg{
+  margin-left: 30px;
+  margin-top: 10px;
+  color: #B3B3B3;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.social-container{
+  border-radius: 30px;
+  background-color: #6a50b23e;
+}
+a{
+  text-decoration: none;
+}
+
+/* userPayout css */
+.UserPayout-sectoion1{
+  width: 75%;
+  padding: 20px 0px 20px 20px;
+  
+}
+.UserPayout-sectoion2{
+  width: 25%;
+  /* background-color: green; */
+  height: 100vh;
+  padding: 20px;
+}
+.payoutHistory{
+  height: 87%;
+  border-radius: 30px;
+  padding: 20px;
+  overflow: auto;
+}
+.payoutHistory p:nth-child(1){
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.payoutHistory p:nth-child(2){
+  font-size: 10px;
+  font-weight: 400;
+  color: #8B8B8B;
+}
+.payoutContainer{
+  background-color: #F6F6F6;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+ 
+}
+.payoutHistoryImg img{
+  width: 27px;
+  height: 29px;
+
+}
+.payoutHistoryData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payoutHistoryData p:nth-child(1){
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0px;
+}
+.payoutHistoryData p:nth-child(2){
+  font-size: 8px;
+  font-weight: 400;
+  color: #8B8B8B;
+  margin: 0px;
+}
+.paymentMethod{
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+}
+.paymentMethod p{
+  font-size:20px ;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.paymentData p:nth-child(1){
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0px;
+  color: #8B8B8B;
+}
+.paymentData p:nth-child(2){
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+
+/* ordercard css */
+.orderCard{
+border-radius: 25px;
+width: 100%;
+height: 270px;
+overflow: hidden;
+background-color: white;
+padding-bottom: 10px;
+margin-bottom: 20px;
+
+
+}
+.orderCard img{
+  width:100% ;
+  height: 95px;
+  margin-bottom: 10px;
+} 
+.projectName{
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0px 0px 0px 10px;
+}
+.projectDescription{
+  font-size: 9px;
+  margin: 0px 0px 0px 10px;
+  padding-right: 10px;
+  color: #6F6F6F;
+  height: 50px;
+  overflow: hidden;
+}
+.orderdata p{
+  font-size: 7px;
+  margin: 3px;
+
+
+}
+/* influincer css */
+.influincerData{
+  margin-left: 10px;
+}
+.influincerData p:nth-child(1){
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.influincerData p:nth-child(2){
+  margin: 0px;
+  font-size: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #8B8B8B;
+  font-weight: 500;
+}
+.influincerData p:nth-child(3){
+  margin: 0px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.InfluinerOrder{
+  background-color: #F6F6F6;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.influincerOrderData p:nth-child(1){
+  margin: 0px;
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+}
+.influincerOrderData p:nth-child(2){
+  margin: 0px;
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+.influincerOrderData p:nth-child(3){
+  margin: 0px;
+  color: #8B8B8B;
+  font-size: 10px;
+  font-weight: 500;
+}
+.influincerOrderImg {
+  background-color: #4F99DD;
+  padding: 15px;
+  border-radius: 50px;
+
+}
+.influincerOrderImg img{
+  width: 30px;
+  height: 30px;
+  
+}
+.InfluinecrSocialsData p{
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.InfluinecrSocialsImg {
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.InfluinecrSocialsImg img{
+  width: 50px;
+  height: 40px;
+}
+.InfluinecrSocials{
+  padding: 8px 8px 8px 10px;
+  border-radius: 20px;
+  background-color: rgba(121, 95, 194, 0.249);
+  margin-bottom: 8px;
+}
+.Influincersocialheading{
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.influincerLikes p:nth-child(1){
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.influincerLikes p:nth-child(2){
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0px;
+}
+.influincerLikes p:nth-child(3){
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0px;
+  color: #25BB00;
+}

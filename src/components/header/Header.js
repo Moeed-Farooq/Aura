@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../images/logo.png'
 import adminicon from '../images/adminicon.png'
-import search from '../images/searchbg.png'
+import search from '../images/search.png'
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
 
             <div className="col-md-4">
                     <a href="" className='logo'>
-                    <img src={logo} alt="" />
+                    <img src={logo}  alt="" />
                     <p>Aura</p>
                     </a>
             </div>

@@ -36,7 +36,7 @@ const Business = () => {
               <select
                 name="show"
                 id="show"
-                className='mx-2 rounded-1'
+                className='FilterEntries'
                 onChange={handleShowChange}
                 value={showCount}
               >
@@ -53,7 +53,7 @@ const Business = () => {
            </div>
           </div>
           <hr />
-          <div className="row main-labels mx-5">
+          <div className="row main-labels mx-3">
             <div className="col-md-3 text-start ps-5 name"><p>Name</p></div>
             <div className="col-md-3 text-start ps-5"><p>Email</p></div>
             <div className="col-md-3 text-end pe-5"><p>Role</p></div>

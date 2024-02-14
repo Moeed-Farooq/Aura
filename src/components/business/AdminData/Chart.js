@@ -25,8 +25,8 @@ const Chart = () => {
   return (
     <>
       <div className="row">
-        <div className="col-md-3">
-          <h4>Order Analytics</h4>
+        <div className="col-md-4">
+          <h4 className='ps-3'>Order Analytics</h4>
         </div>
         <div className="col-md-2">
           <Link to="/completeOrder"><button className="chart-btn btn-sm">Completed</button></Link>
@@ -34,7 +34,7 @@ const Chart = () => {
         <div className="col-md-2">
           <Link to="/cancelOrder"><button className="chart-btn btn-sm">Cancelled</button></Link>
         </div>
-        <div className="col-md-5 d-flex justify-content-end">
+        <div className="col-md-4 d-flex justify-content-end">
           <select
             id="monthsSelect"
             className="chart-btn  btn-sm w-50 me-4 form-select"

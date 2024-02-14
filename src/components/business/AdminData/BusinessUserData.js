@@ -84,9 +84,9 @@ const BusinessUserData = () => {
         </div>
        
 
-        <div className="col-md-4 bg-white px-3 align-items-center py-2" style={{ borderRadius: "30px", position: 'relative' }}>
+        <div className="col-md-4  bg-white px-3  align-items-center py-2" style={{ borderRadius: "30px", position: 'relative' }}>
   <div className='d-flex justify-content-between align-items-center py-2'>
-    <h4>Orders Chats</h4>
+    <h4 className='ps-3'>Orders Chats</h4>
     <div style={{ position: 'relative' }}>
       {isSearchOpen ? (
         <button

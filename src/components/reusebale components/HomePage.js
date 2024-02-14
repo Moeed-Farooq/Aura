@@ -29,8 +29,8 @@ const Homepage = ({Category3,Category4,name,profile,type,brandname,date,link}) =
   return (
     <>
       <div className="main-container">
-        <div className="container-fluid m-0 p-0 ">
-          <div className="row pt-4 px-4 d-flex">
+        <div className="container-fluid m-0 p-0 " >
+          <div className="row pt-4 px-4 d-flex" >
             <div className="col-md-6  ps-4" style={{ color: "#8B8B8B" }}>
               <label htmlFor="show">Show 
               <span>

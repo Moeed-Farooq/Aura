@@ -17,7 +17,7 @@ const UserPayout = () => {
      <div className="main-container">
         <div className="container-fluid d-flex m-0 p-0 ">
         <div className="UserPayout-sectoion1">
-        <div className="col-md-12 bg-white p-3" style={{borderRadius:"20px"}}>
+        <div className="col-md-12 bg-white p-3 " style={{borderRadius:"20px"}}>
                 <div className="row">
                     <div className="col-md-3">
                         <div className='userreportimg'>

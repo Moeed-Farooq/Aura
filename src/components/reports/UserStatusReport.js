@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import profile from '../images/girlimg.png'
 import Chat from '../reusebale components/Chat'
 import searchicon from '../images/searchicon.png'
+import off from '../images/off.jpg'
 
 const UserStatusReport = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -42,31 +43,41 @@ const UserStatusReport = () => {
                 </div>
             </div>
             
-        <div className="col-md-5 " >
-      <div className="bg-white px-3 align-items-center py-2 h-100" style={{ borderRadius: "30px", position: 'relative' }}>
-      <div className='d-flex   justify-content-between align-items-center py-2'>
-        <h4>Orders Chats</h4>
-        <div style={{ position: 'relative' }}>
-          <img
-            src={searchicon}
-            className='bg-primary p-1 rounded-circle'
-            width={25}
-            height={25}
-            alt=""
-            onClick={handleSearchClick}
-          />
-          {isSearchOpen && (
-            <div style={{ position: 'absolute', top: '100%', right: 0, zIndex: 1 }}>
-              {/* Your search bar content goes here */}
-              <input type="text" placeholder="Search..." value={searchTerm} onChange={handleSearchChange} />
-            </div>
-          )}
+           <div className='col-md-5  '>
+           <div className="bg-white px-3  align-items-center py-2" style={{ borderRadius: "30px", position: 'relative' }}>
+  <div className='d-flex justify-content-between align-items-center py-2'>
+    <h4 className='ps-3'>Orders Chats</h4>
+    <div style={{ position: 'relative' }}>
+      {isSearchOpen ? (
+        <button
+          className='cancelButton bg-primary p-1 rounded-circle'
+          onClick={handleSearchClick}
+        >
+          <img src={off} width={25} height={25} className='rounded-circle' alt="" />
+        </button>
+      ) : (
+        <img
+          src={searchicon}
+          className='searchImg bg-primary p-1 rounded-circle'
+          width={25}
+          height={25}
+          alt=""
+          onClick={handleSearchClick}
+        />
+      )}
+      {isSearchOpen && (
+        <div style={{ position: 'absolute', top: '100%', right: 0, zIndex: 1 }}>
+          {/* Your search bar content goes here */}
+          <input type="text" autoFocus className='py-2 px-3 rounded-pill' placeholder="Search..." value={searchTerm} onChange={handleSearchChange} />
         </div>
-      </div>
-
-      <Chat searchTerm={searchTerm} /> {/* Pass the search term to the Chat component */}
-      </div>
+      )}
     </div>
+  </div>
+
+  <Chat searchTerm={searchTerm} /> {/* Pass the search term to the Chat component */}
+</div>
+           </div>
+
             </div>
          </div>
          <div className="row " >

@@ -34,7 +34,7 @@ const Dashboard = () => {
 
           <div className="components">
             <Routes>
-              <Route path='/business' element={<Business />} />
+              <Route path='/' element={<Business />} />
               <Route path='/BusinessUser' element={<BusinessUserData />} />
               <Route path='/completeOrder' element={<CompleteOrder />} />
               <Route path='/cancelOrder' element={<CancelOrder />} />

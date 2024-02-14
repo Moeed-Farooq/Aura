@@ -12,7 +12,7 @@ const Sidebar = () => {
     <div className="sideNavbar">
       <ul>
         <li>
-          <NavLink to="/business" activeClassName="active-link">
+          <NavLink to="/" activeClassName="active-link">
             <img src={business} alt="" /> Businesses
           </NavLink>
         </li>

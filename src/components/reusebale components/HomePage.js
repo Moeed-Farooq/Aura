@@ -37,7 +37,7 @@ const Homepage = ({Category3,Category4,name,profile,type,brandname,date,link}) =
               <select
                 name="show"
                 id="show"
-                className='mx-2 rounded-1'
+                className='FilterEntries'
                 onChange={handleShowChange}
                 value={showCount}
               >

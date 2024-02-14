@@ -9,7 +9,7 @@ const HomeCard = ({profile,name,brandname,date,type}) => {
                 <div className="col-md-2 text-start"><p>{date}</p></div>
                 <div className="col-md-2"><p>{brandname}</p></div>
                 <div className="col-md-3 text-center "><p>{type}</p></div>
-                <div className="col-md-2 text-end pe-5 action"><img src={listicon} alt="" /></div>
+                <div className="col-md-2 text-end action" style={{paddingRight:"35px"}}><img src={listicon} alt="" /></div>
             </div>
     
     </>

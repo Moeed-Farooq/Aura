@@ -8,7 +8,7 @@ const AdminCard = ({profile,AdminName,email,role}) => {
                 <div className="col-md-3 text-start ps-3 name"><p className='p-0'><span><img className='me-3' src={profile} width={30} height={30} alt="" /></span> {AdminName}</p></div>
                 <div className="col-md-3 text-start"><p>{email}</p></div>
                 <div className="col-md-3 text-end"><p>{role}</p></div>
-                <div className="col-md-3 text-end pe-5 action"><img src={listicon} alt="" /></div>
+                <div className="col-md-3 text-end action" style={{paddingRight:"35px"}}><img src={listicon} alt="" /></div>
             </div>
     
     </>

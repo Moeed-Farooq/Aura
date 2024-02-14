@@ -12,7 +12,7 @@ const UserVerification = () => {
     <div className="main-container">
         <div className="container-fluid m-0 p-0 d-flex flex-column ">
          <div className="row px-4 mt-3 d-flex justify-content-between">
-            <div className="col-md-7 bg-white p-3" style={{borderRadius:"20px"}}>
+            <div className="col-md-8 bg-white p-3" style={{borderRadius:"20px"}}>
                 <div className="row">
                     <div className="col-md-3">
                         <div className='userverificationtimg'>
@@ -34,44 +34,44 @@ const UserVerification = () => {
 
                 </div>
                 <div className="reportstatus mt-1">
-                <p>Bio: <br /> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste a reiciendis vitae est quis, dolores accusamus beatae odio minima deleniti?</span></p>
+                <p className='m-0'>Bio: <br /> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste a reiciendis vitae est quis, dolores accusamus beatae odio minima deleniti?</span></p>
                 </div>
             </div>
-            <div className="col-md-5  ">
-                <div className='bg-white h-100 px-5' style={{borderRadius:"20px"}}>
-                    <p className="fw-bolder">Social media Accounts</p>
-                    <div className="social-container  d-flex p-3">
-                        <div className="img bg-white p-1 d-flex jusitfy-content-center" style={{borderRadius:"14px"}}>
+            <div className="col-md-4  ">
+                <div className="bg-white h-100 p-3" style={{borderRadius:"30px"}}>
+                    <p className='Influincersocialheading'>Social media Accounts</p>
+                    <div className=' mt-3 d-flex InfluinecrSocials'>
+                        <div className='InfluinecrSocialsImg'>
                             <img src={youtube} alt="" />
                         </div>
-                        <div className="socialData ms-2">
-                        <p className='m-0'>Youtube</p>
-                        <p className='my-1'>12k Followers</p>
-                        <p className='m-0'><a href=""><span><img src={linkicon} alt="" /></span> www.youtube.com</a></p>
+                        <div className='InfluinecrSocialsData'>
+                            <p>Youtube</p>
+                            <p>12k Followers</p>
+                            <p><a href="">www.youtube.com</a></p>
                         </div>
                     </div>
-                    <div className="social-container  d-flex p-3 my-2">
-                        <div className="img bg-white py-1 px-2 d-flex jusitfy-content-center" style={{borderRadius:"14px"}}>
+
+                    <div className='d-flex InfluinecrSocials'>
+                        <div className='InfluinecrSocialsImg'>
                             <img src={instagram} alt="" />
                         </div>
-                        <div className="socialData ms-2">
-                        <p className='m-0'>Youtube</p>
-                        <p className='my-1'>12k Followers</p>
-                        <p className='m-0'><a href=""><span><img src={linkicon} alt="" /></span> www.youtube.com</a></p>
+                        <div className='InfluinecrSocialsData'>
+                            <p>Instagram</p>
+                            <p>12k Followers</p>
+                            <p><a href="">www.youtube.com</a></p>
                         </div>
                     </div>
-                    <div className="social-container  d-flex p-3 mb-2">
-                        <div className="img bg-white py-1 px-3  d-flex jusitfy-content-center" style={{borderRadius:"14px"}}>
+
+                    <div className='d-flex InfluinecrSocials'>
+                        <div className='InfluinecrSocialsImg'>
                             <img src={linkedin} alt="" />
                         </div>
-                        <div className="socialData ms-2">
-                        <p className='m-0'>Youtube</p>
-                        <p className='my-1'>12k Followers</p>
-                        <p className='m-0'><a href=""><span><img src={linkicon} alt="" /></span> www.youtube.com</a></p>
+                        <div className='InfluinecrSocialsData'>
+                            <p>Linkedin</p>
+                            <p>12k Followers</p>
+                            <p><a href="">www.youtube.com</a></p>
                         </div>
                     </div>
-                  
-                    
                 </div>
             </div>
          </div>

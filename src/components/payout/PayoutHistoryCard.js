@@ -1,10 +1,11 @@
+
 import React from 'react';
 import apple from '../images/apple.png';
 import google from '../images/google.png';
 import paypal from '../images/paypal.png';
 
 
-const PayoutHistoryCard = () => {
+const PayoutHistoryCard = ({onComponentChange }) => {
   // Array of data directly within the component
   const payoutData = [
     { method: 'ApplePay', transactionNumber: '#123456789', amount: 400, time: '03:00 am',img:apple },
@@ -30,7 +31,8 @@ const PayoutHistoryCard = () => {
   return (
     <>
       {payoutData.map((data, index) => (
-        <div className="row payoutContainer "  key={index}>
+        <div className="row payoutContainer " onClick={() => onComponentChange('PayoutpaymentMethod') }
+         key={index}> 
           <div className="col-md-6 text-start d-flex">
             <div className='payoutHistoryImg'>
               <img src={data.img} alt="" />
@@ -53,3 +55,4 @@ const PayoutHistoryCard = () => {
 }
 
 export default PayoutHistoryCard;
+

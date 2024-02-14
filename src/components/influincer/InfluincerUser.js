@@ -9,6 +9,7 @@ import instagram from '../images/insta.png'
 import linkedin from '../images/linkedin.png'
 import linkicon from '../images/linkicon.png'
 import heart from '../images/heart.png'
+import star from '../images/star.png'
 import InfluincerChart from './InfluincerChart'
 
 
@@ -152,7 +153,7 @@ const InfluincerUser = () => {
             <div className="bg-white influincerLikes mt-2 p-3" style={{borderRadius:"30px"}}>
             <div className=' d-flex justify-content-between align-items-center'>
                 <p>Total likes</p>
-                <img src={heart} alt="" />
+                <img src={star} alt="" />
             </div>
             <p>22.3k</p>
             <p>+23 more</p>

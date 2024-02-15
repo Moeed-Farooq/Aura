@@ -17,8 +17,8 @@ const EditAdmin = () => {
             <div className="col-md-6 text-center mt-4"><p>Password: <span>**************</span></p></div>
             </div>
             <div className="editAdminBtn d-flex justify-content-between">
-                <button className='btn'>Edit</button>
-                <button className='btn'>Delete</button>
+                <button className='border-0'>Edit</button>
+                <button className='border-0'>Delete</button>
             </div>
           </div>
           </div>

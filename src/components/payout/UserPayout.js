@@ -19,12 +19,12 @@ const UserPayout = () => {
         <div className="UserPayout-sectoion1">
         <div className="col-md-12 bg-white p-3 " style={{borderRadius:"20px"}}>
                 <div className="row">
-                    <div className="col-md-3">
-                        <div className='userreportimg'>
+                    <div className="col-md-2 ms-3">
+                        <div className='userreportimg '>
                             <img src={profile} alt="" />
                         </div>
                     </div>
-                    <div className="col-md-9">
+                    <div className="col-md-9 ms-3">
                         <div className='userreportData '>
                             <p  className='mb-3 mt-1'>Name: <span>Hazel Finch</span></p>
                             <p className='mb-3'>Gender: <span>Female</span></p>
@@ -52,7 +52,9 @@ const UserPayout = () => {
               <div className="payoutHistory bg-white">
                   <p>Hazel Finch</p>
                   <p>Payout History</p>
+                  <div className='PayoutScroll'>
                   <PayoutHistoryCard onComponentChange={handleComponentChange} />
+                  </div>
               </div>
             </div>
 

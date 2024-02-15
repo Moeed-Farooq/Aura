@@ -3,6 +3,31 @@ body{
   color: black;
   display: block;
 }
+.SmallScreenContainer{
+background-color: #F6F6F6;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SmallScreenContainer div{
+  background-color: #f6f6f6db;
+display: flex;
+flex-direction: column;
+align-items: center;
+  justify-content: center;
+}
+.SmallScreenContainer div img{
+  width: 200px;
+  height: 200px;
+}
+.SmallScreenContainer div p{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  
+}
 .Link{
   text-decoration: none;
 }
@@ -15,10 +40,19 @@ body{
 background-color: #6A50B2;
 color: white;
 }
+.AllContent{
+  display: block;
+}
+.ShortScreenMsg{
+  display: none;
+}
 /* Media query to hide content when screen is less than 1300px */
 @media (max-width: 1299px) {
-  body {
+  .AllContent{
     display: none;
+  }
+  .ShortScreenMsg{
+    display: block;
   }
 }
 
@@ -37,9 +71,9 @@ color: white;
   color: black;
 }
 .logo img{
-  width: 34px;
-  height: 40px;
-  margin-top: 17px;
+  width: 50px;
+  height: 50px;
+  margin-top: 13px;
   margin-right: 12px;
 }
 .logo p{
@@ -89,7 +123,7 @@ margin-right: 50px;
 }
 .search img{
   position: absolute;
-  margin-left: 88%;
+  margin-left: 90%;
   margin-top: 5px;
   width: 40px;
   height: 40px;
@@ -168,7 +202,31 @@ margin-right: 50px;
   padding: 5px 10px 5px 10px;
   border-radius: 10px;
   color: #8B8B8B;
+ 
  }
+ .DateBtn span{
+margin-left: 10px;
+margin-right: 10px;
+}
+.DateBtn img{
+  margin-bottom: 3px;
+}
+ 
+.pagination-button{
+  background-color: #6a50b242;
+  color: white;
+  border: none;
+  margin-right: 5px;
+  padding: 3px 15px 3px 15px;
+  border-radius: 10px;
+}
+.active-page {
+  /* background-color: blue; */
+  background:linear-gradient(#4F99DD,#6A50B2);
+  color: white;
+
+  /* Add any other styles for the active page button */
+}
 
 .main-container{
 background-color: #F6F6F6;
@@ -302,6 +360,12 @@ border-radius: 10px;
   border-radius: 10px;
   background-color: white;
  }
+ .createAdminBtn{
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #4F99DD;
+  padding: 5px 20px 5px 20px;
+ }
  .createAdmin div select{
 border-radius: 10px;
  }
@@ -342,6 +406,8 @@ border-radius: 10px;
 .Createbtn{
  color: white;
   background:linear-gradient(#4F99DD,#6A50B2);
+  border: 0px;
+  border-radius: 10px;
 }
 
 /* reoprts css */
@@ -396,6 +462,7 @@ margin-bottom: 5px;
   padding: 5px 25px 5px 25px;
   border-radius: 10px;
   margin-left: 25px;
+  border: none;
 
 }
 .userReportBtn button:nth-child(2){
@@ -404,6 +471,7 @@ margin-bottom: 5px;
   padding: 5px 25px 5px 25px;
   border-radius: 10px;
   margin-right: 25px;
+  border: none;
   color: white;
 
 
@@ -466,10 +534,16 @@ a{
   padding: 20px;
 }
 .payoutHistory{
-  height: 87%;
+  height: 88%;
   border-radius: 30px;
-  padding: 20px;
+  padding: 15px;
+}
+.PayoutScroll{
   overflow: auto;
+  height: 90%;
+  overflow-x: hidden;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .payoutHistory p:nth-child(1){
   font-size: 18px;
@@ -487,7 +561,18 @@ a{
   border-radius: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
- 
+}
+.PayoutScroll::-webkit-scrollbar{
+  width: 12px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  height: 90%;
+  
+}
+.PayoutScroll::-webkit-scrollbar-thumb{
+  width: 12px;
+  border-radius: 20px;
+  background-color: #6a50b247;
 }
 .payoutChart{
   background-color: white;
@@ -689,4 +774,10 @@ margin-bottom: 20px;
 .Chat-Container::-webkit-scrollbar-thumb {
   background-color: #6a50b25f; /* Set the color of the scrollbar thumb */
   border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+}
+.searchInput{
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-right: 2px;
 }

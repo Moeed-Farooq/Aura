@@ -78,8 +78,8 @@ const UserVerification = () => {
          <p className='usermsg'>User has passed the user verification successfully</p>
          <div className="row " >
             <div className='userReportBtn'>
-                <button className='btn '>Reject</button>
-                <button className='btn'>Verify</button>
+                <button className=''>Reject</button>
+                <button className=''>Verify</button>
             </div>
          </div>
           </div>

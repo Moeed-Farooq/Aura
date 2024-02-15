@@ -28,18 +28,19 @@ const CreateAdmin = () => {
             </div>
             <div className="row createAdmin mt-3">
                 <div className="col-md-2 d-flex align-items-center"><p>Role:</p></div>
-                <div className="col-md-4 ">
-              <select
-                name="show"
-                id="show"
-                className=' py-2   w-100 '
-               
-              >
-                <option value="3">Super Admin</option>
-                <option value="5">Admin</option>
-                <option value="7">Owner</option>
-              </select>
+                <div className="col-md-4">
+                <div class="dropdown ">
+  <button class="createAdminBtn w-100 text-start dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span style={{marginRight:"245px"}}>Select Role</span>
+  </button>
+  <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Admin</a>
+    <a class="dropdown-item" href="#">Super Admin </a>
+    <a class="dropdown-item" href="#">Admin</a>
+  </div>
+</div>
                 </div>
+         
             </div>
             <div className="row createAdmin mt-3">
                 <div className="col-md-2 d-flex align-items-center"><p>Image:</p></div>
@@ -48,7 +49,7 @@ const CreateAdmin = () => {
                 </div>
             </div>
             <div className='text-end mt-5'>
-                <button className='btn Createbtn px-5'>Create</button>
+                <button className='Createbtn py-2 px-5'>Create</button>
             </div>
             </div>
             </div>

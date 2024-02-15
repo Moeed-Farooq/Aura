@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import Chat from '../reusebale components/Chat'
-import searchicon from '../images/searchicon.png'
+import searchicon from '../images/search.png'
 import profile from '../images/girlimg.png'
 import { Link } from 'react-router-dom'
 import cancel from '../images/cancelOrder.png'
@@ -11,20 +11,19 @@ import linkicon from '../images/linkicon.png'
 import heart from '../images/heart.png'
 import star from '../images/star.png'
 import InfluincerChart from './InfluincerChart'
-import off from '../images/off.jpg'
+import off from '../images/off.png'
 
 
 const InfluincerUser = () => {
-    const [isSearchOpen, setIsSearchOpen] = useState(false);
-    const [searchTerm, setSearchTerm] = useState('');  // State to store the search term
-  
-    const handleSearchClick = () => {
-      setIsSearchOpen(!isSearchOpen);
-    };
-  
-    const handleSearchChange = (event) => {
-      setSearchTerm(event.target.value);
-    };
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearchClick = () => {
+    setIsSearchOpen(!isSearchOpen);
+    if (!isSearchOpen) {
+      setSearchTerm(''); // Clear search term when opening the search input
+    }
+  };
   return (
    
     <>
@@ -34,7 +33,7 @@ const InfluincerUser = () => {
             <div className="col-md-4 ">
                <div className='bg-white p-3' style={{borderRadius:"30px"}}>
                <div className='bg-white d-flex'>
-               <div className=''>
+               <div className='ms-2'>
                     <img src={profile} width={75} height={75} alt="" />
                 </div>
                 <div className='influincerData'> 
@@ -72,8 +71,8 @@ const InfluincerUser = () => {
 
 
             <div className="col-md-4  ">
-                <div className="bg-white h-100 p-3" style={{borderRadius:"30px"}}>
-                    <p className='Influincersocialheading'>Social media Accounts</p>
+                <div className="bg-white h-100 p-3 " style={{borderRadius:"30px"}}>
+                    <p className='Influincersocialheading ms-1'>Social media Accounts</p>
                     <div className='d-flex InfluinecrSocials'>
                         <div className='InfluinecrSocialsImg'>
                             <img src={youtube} alt="" />
@@ -110,37 +109,40 @@ const InfluincerUser = () => {
             </div>
 
             <div className="col-md-4 bg-white px-3 align-items-center py-2" style={{ borderRadius: "30px", position: 'relative' }}>
-  <div className='d-flex justify-content-between align-items-center py-2'>
-    <h4>Orders Chats</h4>
-    <div style={{ position: 'relative' }}>
-      {isSearchOpen ? (
-        <button
-          className='cancelButton bg-primary p-1 rounded-circle'
-          onClick={handleSearchClick}
-        >
-          <img src={off} width={25} height={25} className='rounded-circle' alt="" />
-        </button>
-      ) : (
-        <img
-          src={searchicon}
-          className='searchImg bg-primary p-1 rounded-circle'
-          width={25}
-          height={25}
-          alt=""
-          onClick={handleSearchClick}
-        />
-      )}
-      {isSearchOpen && (
-        <div style={{ position: 'absolute', top: '100%', right: 0, zIndex: 1 }}>
-          {/* Your search bar content goes here */}
-          <input type="text" autoFocus className='py-2 px-3 rounded-pill' placeholder="Search..." value={searchTerm} onChange={handleSearchChange} />
+      <div className='d-flex  justify-content-between align-items-center py-2'>
+        <h4 className='ps-3 m-0'>Orders Chats</h4>
+        <div style={{ position: 'relative' }}>
+          {isSearchOpen ? (
+            <div className='position-relative'>
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className='searchInput'
+                placeholder='Search...'
+              />
+               <button
+                className='position-absolute me-1 bg-white  end-0 translate-middle-y' style={{border:"none",marginTop:"16px"}}
+                onClick={handleSearchClick}
+              >
+                <img src={off} style={{width:"18px",height:"20px"}} className='' alt="" />
+              </button>
+            </div>
+          ) : (
+            <img
+              src={searchicon}
+              className='searchImg bg-primary rounded-circle'
+              width={25}
+              height={25}
+              alt=""
+              onClick={handleSearchClick}
+            />
+          )}
         </div>
-      )}
-    </div>
-  </div>
+      </div>
 
-  <Chat searchTerm={searchTerm} /> {/* Pass the search term to the Chat component */}
-</div>
+      <Chat searchTerm={searchTerm} /> {/* Pass the search term to the Chat component */}
+    </div>
 
     <div className="row  m-0 p-0">
     <div className="col-md-8 mt-3 " >
@@ -156,7 +158,7 @@ const InfluincerUser = () => {
                 <p>Total likes</p>
                 <img src={heart} alt="" />
             </div>
-            <p>22.3k</p>
+            <p className='mb-2'>22.3k</p>
             <p>+23 more</p>
             </div>
 
@@ -165,7 +167,7 @@ const InfluincerUser = () => {
                 <p>Total likes</p>
                 <img src={star} alt="" />
             </div>
-            <p>22.3k</p>
+            <p className='mb-2'>22.3k</p>
             <p>+23 more</p>
             </div>
         </div>

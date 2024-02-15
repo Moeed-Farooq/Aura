@@ -6,20 +6,20 @@ import Chat from '../../reusebale components/Chat'
 import Progress from './Progress'
 import Chart from './Chart'
 import searchicon from '../../images/search.png'
-import off from '../../images/off.jpg'
+import off from '../../images/off.png'
 import { Link } from 'react-router-dom'
 
 const BusinessUserData = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');  // State to store the search term
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearchClick = () => {
     setIsSearchOpen(!isSearchOpen);
+    if (!isSearchOpen) {
+      setSearchTerm(''); // Clear search term when opening the search input
+    }
   };
 
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
   return (
     <>
     <div className='main-container'> 
@@ -31,7 +31,7 @@ const BusinessUserData = () => {
             <img src={profile} width={75} height={75} alt="" />
            </div>
            <div className="bio">
-            <h4 className='m-0 p-0 '>Hazel Finch</h4>
+            <h4 className='m-0 p-0 mb-1 '>Hazel Finch</h4>
             <p className='m-0 p-0 ' style={{fontSize:"13px",fontWeight:"500"}}>Brand Name</p>
             <p className='m-0 p-0 ' style={{fontSize:"12px",fontWeight:"500"}}>Brand</p>
             <p style={{fontSize:"12px"}} className='m-0 p-0'>Lorem ipsum dolor sit amet.</p>
@@ -84,38 +84,41 @@ const BusinessUserData = () => {
         </div>
        
 
-        <div className="col-md-4  bg-white px-3  align-items-center py-2" style={{ borderRadius: "30px", position: 'relative' }}>
-  <div className='d-flex justify-content-between align-items-center py-2'>
-    <h4 className='ps-3'>Orders Chats</h4>
-    <div style={{ position: 'relative' }}>
-      {isSearchOpen ? (
-        <button
-          className='cancelButton bg-primary p-1 rounded-circle'
-          onClick={handleSearchClick}
-        >
-          <img src={off} width={25} height={25} className='rounded-circle' alt="" />
-        </button>
-      ) : (
-        <img
-          src={searchicon}
-          className='searchImg bg-primary p-1 rounded-circle'
-          width={25}
-          height={25}
-          alt=""
-          onClick={handleSearchClick}
-        />
-      )}
-      {isSearchOpen && (
-        <div style={{ position: 'absolute', top: '100%', right: 0, zIndex: 1 }}>
-          {/* Your search bar content goes here */}
-          <input type="text" autoFocus className='py-2 px-3 rounded-pill' placeholder="Search..." value={searchTerm} onChange={handleSearchChange} />
+        <div className="col-md-4 bg-white px-3 align-items-center py-2" style={{ borderRadius: "30px", position: 'relative' }}>
+      <div className='d-flex  justify-content-between align-items-center py-2'>
+        <h4 className='ps-3 m-0'>Orders Chats</h4>
+        <div style={{ position: 'relative' }}>
+          {isSearchOpen ? (
+            <div className='position-relative'>
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className='searchInput'
+                placeholder='Search...'
+              />
+              <button
+                className='position-absolute me-1 bg-white  end-0 translate-middle-y' style={{border:"none",marginTop:"16px"}}
+                onClick={handleSearchClick}
+              >
+                <img src={off} style={{width:"20px",height:"20px"}} className='' alt="" />
+              </button>
+            </div>
+          ) : (
+            <img
+              src={searchicon}
+              className='searchImg bg-primary rounded-circle'
+              width={25}
+              height={25}
+              alt=""
+              onClick={handleSearchClick}
+            />
+          )}
         </div>
-      )}
-    </div>
-  </div>
+      </div>
 
-  <Chat searchTerm={searchTerm} /> {/* Pass the search term to the Chat component */}
-</div>
+      <Chat searchTerm={searchTerm} /> {/* Pass the search term to the Chat component */}
+    </div>
 
       </div>
       {/* progress code start here */}

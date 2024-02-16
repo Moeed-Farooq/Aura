@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './influincer.css'
 import { BarChart, Bar, XAxis, YAxis,Rectangle,  CartesianGrid, ResponsiveContainer,Tooltip, Legend } from 'recharts';
 
 const Chart = () => {

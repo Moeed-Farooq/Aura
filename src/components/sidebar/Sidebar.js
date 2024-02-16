@@ -1,4 +1,5 @@
 import React from 'react';
+import './sidebar.css'
 import reports from '../images/reports.png';
 import verification from '../images/verification.png';
 import payouts from '../images/payouts.png';

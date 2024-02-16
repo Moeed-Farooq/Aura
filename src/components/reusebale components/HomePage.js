@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import HomeCard from '../reusebale components/HomeCard';
 import filter from '../images/filter.png';
-import calender from '../images/calender.png';
-import dropdown from '../images/dropdown.png';
+import './homepage.css'
+
 
 const Homepage = ({ Category3, Category4, name, profile, type, brandname, date, link }) => {
   const [showCount, setShowCount] = useState(3);
   const [currentPage, setCurrentPage] = useState(1);
+   // State to manage the date value
+   const [currentDate, setCurrentDate] = useState('');
 
   const handleShowChange = (event) => {
     setShowCount(parseInt(event.target.value, 10));
@@ -35,8 +37,11 @@ const Homepage = ({ Category3, Category4, name, profile, type, brandname, date, 
   useEffect(() => {
     // Set the default value of showCount to 7 when the component mounts
     setShowCount(7);
+    setCurrentDate(new Date().toISOString().split('T')[0]);
+
   }, []);
 
+   
   return (
     <>
       <div className="main-container">
@@ -62,7 +67,8 @@ const Homepage = ({ Category3, Category4, name, profile, type, brandname, date, 
             </div>
             <div className="col-md-6 pe-4 text-end">
               <button className='FilterBtn'><span className='me-2'><img src={filter} alt="" /></span>Filter</button>
-              <button className='DateBtn'><img src={calender} alt="" /><span>Oct 20,2023</span><img src={dropdown} alt="" /></button>
+            <input className='DateBtn' id="dateInput" value={currentDate} type="date"  />
+              {/* <button className='DateBtn'><img src={calender} alt="" /><span>Oct 20,2023</span><img src={dropdown} alt="" /></button> */}
             </div>
           </div>
           <hr />

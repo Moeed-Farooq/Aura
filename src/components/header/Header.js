@@ -1,7 +1,9 @@
 import React from 'react'
+import './header.css'
 import logo from '../images/logo.png'
 import adminicon from '../images/adminicon.png'
 import search from '../images/search.png'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -10,10 +12,10 @@ const Header = () => {
         <div className="row header">
 
             <div className="col-md-4">
-                    <a href="" className='logo'>
+                    <Link to="/" className='logo'>
                     <img src={logo}  alt="" />
                     <p>Aura</p>
-                    </a>
+                    </Link>
             </div>
 
             <div className="col-md-4">

@@ -1,0 +1,26 @@
+
+.SmallScreenContainer{
+    background-color: var(--off-white);
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .SmallScreenContainer div{
+      background-color: #f6f6f6db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      justify-content: center;
+    }
+    .SmallScreenContainer div img{
+      width: 200px;
+      height: 200px;
+    }
+    .SmallScreenContainer div p{
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      
+    }

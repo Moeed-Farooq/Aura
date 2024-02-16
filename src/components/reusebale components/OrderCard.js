@@ -1,4 +1,5 @@
 import React from 'react'
+import './ordercard.css'
 
 const OrderCard = ({projectImg,projectDescription,ProjectName,status,result}) => {
   return (

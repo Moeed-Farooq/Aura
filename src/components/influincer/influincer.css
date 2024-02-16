@@ -1,0 +1,105 @@
+
+/* influincer css */
+.influincerData{
+    margin-left: 10px;
+  }
+  .influincerData p:nth-child(1){
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .influincerData p:nth-child(2){
+    margin: 0px;
+    font-size: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    color: var(--dark-gray);
+    font-weight: 500;
+  }
+  .influincerData p:nth-child(3){
+    margin: 0px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .InfluinerOrder{
+    background-color: var(--off-white);
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .influincerOrderData p:nth-child(1){
+    margin: 0px;
+    font-size: 15px;
+    color: var(--black);
+    font-weight: 500;
+  }
+  .influincerOrderData p:nth-child(2){
+    margin: 0px;
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+  }
+  .influincerOrderData p:nth-child(3){
+    margin: 0px;
+    color: var(--dark-gray);
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .influincerOrderImg {
+    background-color: rgba(121, 95, 194, 0.249);
+    padding: 15px;
+    border-radius: 50px;
+  
+  }
+  .influincerOrderImg img{
+    width: 30px;
+    height: 30px;
+    
+  }
+  .InfluinecrSocialsData p{
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .InfluinecrSocialsImg {
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  .InfluinecrSocialsImg img{
+    width: 50px;
+    height: 40px;
+  }
+  .InfluinecrSocials{
+    padding: 8px 8px 8px 10px;
+    border-radius: 20px;
+    background-color: rgba(121, 95, 194, 0.249);
+    margin-bottom: 8px;
+  }
+  .Influincersocialheading{
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .influincerLikes p:nth-child(1){
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  .influincerLikes p:nth-child(2){
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  .influincerLikes p:nth-child(3){
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0px;
+    color: #25BB00;
+  }

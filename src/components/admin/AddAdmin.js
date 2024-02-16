@@ -6,6 +6,7 @@ import filter from '../images/filter.png';
 import date from '../images/calender.png';
 import { Link } from 'react-router-dom';
 import AdminCard from './AdminCard';
+import './admin.css'
 
 const Business = () => {
   const [showCount, setShowCount] = useState(3);

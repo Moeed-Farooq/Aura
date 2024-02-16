@@ -1,6 +1,7 @@
 import React from 'react';
 import profile from '../images/profile.png'
 import HomePage from '../reusebale components/HomePage';
+import './payout.css'
 
 const Reports = () => {
   const data = {

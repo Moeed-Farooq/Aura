@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import profile from '../images/profile.png';
+import './chat.css'
 
 const Chat = ({ searchTerm }) => {
   const [selectedChat, setSelectedChat] = useState(null);

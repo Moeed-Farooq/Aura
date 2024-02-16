@@ -1,0 +1,62 @@
+ /* adminpage css */
+ .AddAdminBtn{
+    background:var(--linear-background);
+  color: var(--white);
+  margin-right: 25px; 
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+  }
+  
+   .createAdmin div input{
+    border-radius: 10px;
+    background-color: var(--white);
+   }
+   .createAdminBtn{
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--sky-blue);
+    padding: 5px 20px 5px 20px;
+   }
+   .createAdmin div select{
+  border-radius: 10px;
+   }
+   .createAdmin div p{
+    font-weight: 500;
+    font-size: 25px;
+  
+   }
+   .adminImage img{
+    width: 200px;
+    height: 200px;
+   }
+   .adminEditData p{
+    font-size: 23px;
+    font-weight: 500;
+   }
+   .adminEditData p span{
+    color: var(--dark-gray);
+    font-weight: 400;
+   }
+   .editAdminBtn{
+    margin-top: 30px;
+   }
+   .editAdminBtn button:nth-child(1){
+    background-color: var(--white);
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    margin-left: 20px;
+  
+  }
+  .editAdminBtn button:nth-child(2){
+    background:var(--linear-background);
+    color: var(--white);
+    padding: 10px 50px 10px 50px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  .Createbtn{
+   color: var(--white);
+    background:var(--linear-background);
+    border: 0px;
+    border-radius: 10px;
+  }

@@ -1,5 +1,5 @@
 import './App.css';
-import SmallScreenMsg from './components/SmallScreenMsg';
+import SmallScreenMsg from './components/smallscreen/SmallScreenMsg';
 import Dashboard from './components/dashboard/Dashboard';
 
 function App() {

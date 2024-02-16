@@ -1,0 +1,43 @@
+/* UserVerification css */
+.userverificationtimg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .userverificationtimg img{
+    height: 150px;
+    width: 150px;
+  }
+  .userverificationtimg p{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .userVerificationData p{
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+  
+  margin-bottom: 8px;
+  }
+  .userVerificationData p span{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-gray);
+  }
+  .usermsg{
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #B3B3B3;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .social-container{
+    border-radius: 30px;
+    background-color: #6a50b23e;
+  }
+  a{
+    text-decoration: none;
+  }

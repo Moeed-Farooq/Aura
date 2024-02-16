@@ -1,0 +1,64 @@
+/* reoprts css */
+
+.ReportsBtn{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .userreportimg{
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .userreportimg img{
+    height: 150px;
+    width: 150px;
+  }
+  
+  .userreportData p{
+    padding-left: 0px;
+    font-size: 15px;
+    font-weight: 500;
+  margin-bottom: 5px;
+  }
+  .userreportData p span{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-gray);
+  }
+  .reportstatus{
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+  .reportstatus p{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .reportstatus p span{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-gray);
+  }
+  .userReportBtn {
+    margin-top:100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .userReportBtn button:nth-child(1){
+    background-color: var(--white);
+    color: var(--black);
+    padding: 5px 25px 5px 25px;
+    border-radius: 10px;
+    margin-left: 25px;
+    border: none;
+  
+  }
+  .userReportBtn button:nth-child(2){
+    background:var(--linear-background);
+    color: var(--black);
+    padding: 5px 25px 5px 25px;
+    border-radius: 10px;
+    margin-right: 25px;
+    border: none;
+    color: var(--white);
+  }

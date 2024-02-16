@@ -1,0 +1,74 @@
+
+/* css for header */
+.header{
+    border-radius: 0px 0px 0px 40px;
+    background-color: var(--white);
+  }
+  .logo{
+    display: flex;
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--black);
+  }
+  .logo:hover{
+    color: var(--black);
+  }
+  .logo img{
+    width: 50px;
+    height: 50px;
+    margin-top: 13px;
+    margin-right: 12px;
+  }
+  .logo p{
+    font-size: 50px;
+    font-weight: 500;
+    height: 50px;
+    width: 120px;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  .admin{
+    display: flex;
+  justify-content: end; 
+  align-items: center;
+  margin-right: 50px;
+  
+  }
+  .admin img{
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+    
+  }
+  .admin p{
+    width: 120px;
+    height: 50px;
+   font-size: 36px;
+   font-weight: 500;
+   font-family: 'Poppins', sans-serif;
+   margin-top: 12px;
+  }
+  
+  .search{
+    position: relative;
+    margin-top: 12px;
+  }
+  .search input{
+    width: 100%;
+    height: 50px;
+    background-color: var(--off-white);
+    color: var(--dark-gray);
+    border: 1px solid var(--dark-gray);
+    padding-left: 25px;
+    border-radius: 38px;
+  
+  }
+  .search img{
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+  }
+  /* css for header ends here */
+  

@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from './images/logo.png'
+import './smallscreen.css'
+import logo from '../images/logo.png'
 const SmallScreenMsg = () => {
   return (
     <>
@@ -8,7 +9,6 @@ const SmallScreenMsg = () => {
         <div>
         <img src={logo} alt="" />
             <p>
-              
                 This Aura Admin Dashboard is only for Desktop size screens!!!
             </p>
          </div>

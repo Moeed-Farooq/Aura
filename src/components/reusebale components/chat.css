@@ -1,0 +1,51 @@
+
+ /* chat css */
+ .chatContainer{
+    display: flex;
+   }
+   .user2{
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  }
+  .user2Msg{
+    width: 60%;
+    color: var(--white);
+    padding: 10px;
+    background:var(--linear-background);
+    padding-left: 15px;
+    border-radius: 20px 0px 20px 20px;
+  }
+  .user2Msg p{
+    margin: 0px;
+  }
+  .user1{
+    display: flex;
+  }
+  .user1Msg{
+    width: 60%;
+    color: var(--white);
+    padding: 10px;
+    padding-left: 15px;
+    background:var(--linear-background);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .user1Msg p{
+    margin: 0px;
+  }
+  
+  .Chat-Container::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+    background-color: #D9D9D9;
+    border-radius: 10px;
+  }
+  .Chat-Container::-webkit-scrollbar-thumb {
+    background-color: #6a50b25f; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+  }
+  .searchInput{
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-right: 2px;
+  }

@@ -1,51 +1,34 @@
-body{
-  background-color: #FFFFFF;
-  color: black;
-  display: block;
-}
-.SmallScreenContainer{
-background-color: #F6F6F6;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.SmallScreenContainer div{
-  background-color: #f6f6f6db;
-display: flex;
-flex-direction: column;
-align-items: center;
-  justify-content: center;
-}
-.SmallScreenContainer div img{
-  width: 200px;
-  height: 200px;
-}
-.SmallScreenContainer div p{
-  font-size: 20px;
-  font-weight: 500;
-  text-align: center;
-  
-}
-.Link{
-  text-decoration: none;
-}
-.active-link {
-  color: yellow; /* Change this to your desired color */
+
+/* common colors use in whole app */
+:root{
+  --linear-background:linear-gradient(#4F99DD,#6A50B2);
+  --white: #ffffff;
+  --black:#000000;
+  --off-white:#F6F6F6;
+  --purple:#6A50B2;
+  --muted-purple:#b9aed4;
+  --sky-blue:#4F99DD;
+  --dark-gray:#8B8B8B;
 }
 
-.chart-btn{
-  opacity: 30%;
-background-color: #6A50B2;
-color: white;
+
+/* css for whole website body */
+body{
+  background-color: var(--white);
+  color: var(--black);
+  display: block;
 }
+
+
+
+/*css for hide and show pages on the basis of width screensizes */
 .AllContent{
   display: block;
 }
 .ShortScreenMsg{
   display: none;
 }
+
 /* Media query to hide content when screen is less than 1300px */
 @media (max-width: 1299px) {
   .AllContent{
@@ -56,80 +39,23 @@ color: white;
   }
 }
 
-/* css for header */
-.header{
-  border-radius: 0px 0px 0px 40px;
-  background-color: #FFFFFF;
-}
-.logo{
-  display: flex;
-  margin-left: 20px;
+/*css for all links and inputs  */
+.Link{
   text-decoration: none;
-  color: black;
-}
-.logo:hover{
-  color: black;
-}
-.logo img{
-  width: 50px;
-  height: 50px;
-  margin-top: 13px;
-  margin-right: 12px;
-}
-.logo p{
-  font-size: 50px;
-  font-weight: 500;
-  height: 50px;
-  width: 120px;
-  font-family: 'Poppins', sans-serif;
-
 }
 
-.admin{
-  display: flex;
-justify-content: end; 
-align-items: center;
-margin-right: 50px;
+input{
+  border: 1px solid var(--muted-purple);
+ }
 
-}
-.admin img{
-  width: 50px;
-  height: 50px;
-  margin-right: 12px;
-  
-}
-.admin p{
-  width: 120px;
-  height: 50px;
- font-size: 36px;
- font-weight: 500;
- font-family: 'Poppins', sans-serif;
- margin-top: 12px;
+/* chart button css */
+.chart-btn{
+opacity: 30%;
+background-color: var(--purple);
+color: var(--white);
 }
 
-.search{
-  position: relative;
-  margin-top: 12px;
-}
-.search input{
-  width: 100%;
-  height: 50px;
-  background-color: #F6F6F6;
-  color: #8B8B8B;
-  border: 1px solid #8B8B8B;
-  padding-left: 25px;
-  border-radius: 38px;
-
-}
-.search img{
-  position: absolute;
-  margin-left: 90%;
-  margin-top: 5px;
-  width: 40px;
-  height: 40px;
-}
-
-/* css for dashboard */
+/* css for dashboard starts here */
 .main{
   width:100%;
   height: 100%;
@@ -138,204 +64,20 @@ margin-right: 50px;
 .sidebar{
   width: 17%;
   height: 100%;
-  background:linear-gradient(#4F99DD,#6A50B2);
-  border-radius: 0px 40px 0px 0px;
+  background:var(--linear-background);
+    border-radius: 0px 40px 0px 0px;
 }
 .components{
   width: 83%;
-  background-color: white ;
+  background-color: var(--white) ;
   padding: 0px 10px 10px 10px;
- 
 }
- /* css for sidenavbar */
-
- .sideNavbar{
-  padding-top: 50px;
- }
- .sideNavbar ul{
-  list-style-type: none;
- }
- .sideNavbar ul li{
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
- }
-
- .sideNavbar ul li img{
-  width: 20px ;
-  height: 21px;
-  margin-right: 15px;
-}
- .sideNavbar ul li a{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-
- }
- .active-link {
-  color: yellow; /* or the desired color for the active link */
-}
- /* Main.js css starts here */
-
- .FilterBtn{
-  background-color: white;
-  border: 1px solid gray;
-  margin-right: 10px;
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px;
-  color: #8B8B8B;
-
- }
- .FilterEntries{
-  background-color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 10px;
-  padding: 3px 5px 3px 5px;
- }
-
-.DateBtn{
-  background-color: white;
-  border: 1px solid gray;
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px;
-  color: #8B8B8B;
- 
- }
- .DateBtn span{
-margin-left: 10px;
-margin-right: 10px;
-}
-.DateBtn img{
-  margin-bottom: 3px;
-}
- 
-.pagination-button{
-  background-color: #6a50b242;
-  color: white;
-  border: none;
-  margin-right: 5px;
-  padding: 3px 15px 3px 15px;
-  border-radius: 10px;
-}
-.active-page {
-  /* background-color: blue; */
-  background:linear-gradient(#4F99DD,#6A50B2);
-  color: white;
-
-  /* Add any other styles for the active page button */
-}
-
-.main-container{
-background-color: #F6F6F6;
-height: 100%;
-border-radius: 40px;
-overflow: hidden;
-}
-
-.dashboard-main button{
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 5px;
-  color: #8B8B8B;
-}
-
-.main-labels {
-  background-color: rgba(128, 105, 189, 0.5); /* RGB color with 50% opacity */
-  text-align: center;
-  color: white;
-  padding: 10px 0;
-  border-radius: 10px;
-}
-
-.main-labels p {
-  margin: 0;
-  color: #6A50B2;
-  padding: 0;
-  opacity: 1; /* You can set this to 1 if you want full opacity for the text */
-}
-.name{
-  border-radius: 15px 0px 0px 15px;
-}
-.action{
-  border-radius: 0px 15px 15px 0px;
-
-}
-.main-items{
-  border: 1px solid black;
-  border-radius: 15px;
-}
-.main-items div{
-  background-color: white;
-  text-align: center;
-  color: black;
-  padding: 10px 0px 10px 0px;
-  }
-  .main-items p{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 30px;
-  }
-  .name{
-    border-radius: 15px 0px 0px 15px;
-  }
-  .action{
-    border-radius: 0px 15px 15px 0px;
-  
-  }
-  .page-link{
-    background-color: #6A50B2;
-    color: white;
-    opacity: 50%;
-  }
-
- /* Main.js css ends here */
-
- /* chat css */
- .chatContainer{
-  display: flex;
- }
- .user2{
-display: flex;
-justify-content: end;
-text-align: end;
-}
-.user2Msg{
-  width: 60%;
-  color: white;
-  padding: 10px;
-  background:linear-gradient(#4F99DD,#6A50B2);
-  padding-left: 15px;
-  border-radius: 20px 0px 20px 20px;
-}
-.user2Msg p{
-  margin: 0px;
-}
+/* css for dashboard ends here */
 
 
-.user1{
-  display: flex;
-}
-.user1Msg{
-  width: 60%;
-  color: white;
-  padding: 10px;
-  padding-left: 15px;
-  background:linear-gradient(#4F99DD,#6A50B2);
-  border-radius: 0px 20px 20px 20px;
-}
-.user1Msg p{
-  margin: 0px;
-}
-
-
+/* css for img of cancel and complete order div in businessUser.js */
  .orders{
-  background-color: #b9aed4;
+  background-color: var(--muted-purple);
  align-items: center;
  display: flex;
  justify-content: center;
@@ -343,441 +85,4 @@ text-align: end;
   width: 90px;
   height: 90px;
  }
- input{
-  border: 1px solid #b9aed4;
- }
-
- /* adminpage css */
- .AddAdminBtn{
-  background:linear-gradient(#4F99DD,#6A50B2);
-color: white;
-margin-right: 25px; 
-padding: 5px 20px 5px 20px;
-border-radius: 10px;
-}
-
- .createAdmin div input{
-  border-radius: 10px;
-  background-color: white;
- }
- .createAdminBtn{
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid #4F99DD;
-  padding: 5px 20px 5px 20px;
- }
- .createAdmin div select{
-border-radius: 10px;
- }
- .createAdmin div p{
-  font-weight: 500;
-  font-size: 25px;
-
- }
- .adminImage img{
-  width: 200px;
-  height: 200px;
- }
- .adminEditData p{
-  font-size: 23px;
-  font-weight: 500;
- }
- .adminEditData p span{
-  color: #8B8B8B;
-  font-weight: 400;
- }
- .editAdminBtn{
-  margin-top: 30px;
- }
- .editAdminBtn button:nth-child(1){
-  background-color: white;
-  padding: 10px 50px 10px 50px;
-  border-radius: 10px;
-  margin-left: 20px;
-
-}
-.editAdminBtn button:nth-child(2){
-  background:linear-gradient(#4F99DD,#6A50B2);
-  color: white;
-  padding: 10px 50px 10px 50px;
-  margin-right: 20px;
-  border-radius: 10px;
-}
-.Createbtn{
- color: white;
-  background:linear-gradient(#4F99DD,#6A50B2);
-  border: 0px;
-  border-radius: 10px;
-}
-
-/* reoprts css */
-
-.ReportsBtn{
-  display: flex;
-  justify-content: space-evenly;
-}
-.userreportimg{
-  display: flex;
-  justify-content: center;
-  padding-left: 20px;
-}
-.userreportimg img{
-  height: 150px;
-  width: 150px;
-}
-
-.userreportData p{
-  padding-left: 0px;
-  font-size: 15px;
-  font-weight: 500;
-margin-bottom: 5px;
-}
-.userreportData p span{
-  font-size: 15px;
-  font-weight: 400;
-  color: #8B8B8B;
-}
-.reportstatus{
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-top: 20px;
-}
-.reportstatus p{
-  font-size: 18px;
-  font-weight: 500;
-}
-.reportstatus p span{
-  font-size: 15px;
-  font-weight: 400;
-  color: #8B8B8B;
-}
-.userReportBtn {
-  margin-top:100px;
-  display: flex;
-  justify-content: space-between;
-}
-.userReportBtn button:nth-child(1){
-  background-color: white;
-  color: black;
-  padding: 5px 25px 5px 25px;
-  border-radius: 10px;
-  margin-left: 25px;
-  border: none;
-
-}
-.userReportBtn button:nth-child(2){
-  background:linear-gradient(#4F99DD,#6A50B2);
-  color: black;
-  padding: 5px 25px 5px 25px;
-  border-radius: 10px;
-  margin-right: 25px;
-  border: none;
-  color: white;
-
-
-}
-
-/* UserVerification css */
-.userverificationtimg{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 20px;
-}
-.userverificationtimg img{
-  height: 150px;
-  width: 150px;
-}
-.userverificationtimg p{
-  font-size: 15px;
-  font-weight: 500;
-}
-.userVerificationData p{
-  padding-left: 20px;
-  font-size: 15px;
-  font-weight: 500;
-
-margin-bottom: 8px;
-}
-.userVerificationData p span{
-  font-size: 15px;
-  font-weight: 400;
-  color: #8B8B8B;
-}
-.usermsg{
-  margin-left: 30px;
-  margin-top: 10px;
-  color: #B3B3B3;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.social-container{
-  border-radius: 30px;
-  background-color: #6a50b23e;
-}
-a{
-  text-decoration: none;
-}
-
-/* userPayout css */
-.UserPayout-sectoion1{
-  width: 75%;
-  padding: 20px 0px 20px 20px;
-  
-}
-.UserPayout-sectoion2{
-  width: 25%;
-  /* background-color: green; */
-  height: 100vh;
-  padding: 20px;
-}
-.payoutHistory{
-  height: 88%;
-  border-radius: 30px;
-  padding: 15px;
-}
-.PayoutScroll{
-  overflow: auto;
-  height: 90%;
-  overflow-x: hidden;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.payoutHistory p:nth-child(1){
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 0px;
-}
-.payoutHistory p:nth-child(2){
-  font-size: 10px;
-  font-weight: 400;
-  color: #8B8B8B;
-}
-.payoutContainer{
-  background-color: #F6F6F6;
-  margin-bottom: 5px;
-  border-radius: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-.PayoutScroll::-webkit-scrollbar{
-  width: 12px;
-  background-color: #D9D9D9;
-  border-radius: 10px;
-  height: 90%;
-  
-}
-.PayoutScroll::-webkit-scrollbar-thumb{
-  width: 12px;
-  border-radius: 20px;
-  background-color: #6a50b247;
-}
-.payoutChart{
-  background-color: white;
-  margin-top: 15px;
-padding-top: 10px;
-
-  border-radius: 30px;
-}
-.payoutHistoryImg img{
-  width: 27px;
-  height: 29px;
-
-}
-.payoutHistoryData{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.payoutHistoryData p:nth-child(1){
-  font-size: 10px;
-  font-weight: 400;
-  margin: 0px;
-}
-.payoutHistoryData p:nth-child(2){
-  font-size: 8px;
-  font-weight: 400;
-  color: #8B8B8B;
-  margin: 0px;
-}
-.paymentMethod{
-  border-radius: 20px;
-  background-color: white;
-  padding: 20px;
-}
-.paymentMethod p{
-  font-size:20px ;
-  font-weight: 500;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-.paymentData p:nth-child(1){
-  font-size: 12px;
-  font-weight: 500;
-  margin: 0px;
-  color: #8B8B8B;
-}
-.paymentData p:nth-child(2){
-  font-size: 15px;
-  font-weight: 500;
-  margin: 0px;
-}
-
-
-/* ordercard css */
-.orderCard{
-border-radius: 25px;
-width: 100%;
-height: 270px;
-overflow: hidden;
-background-color: white;
-padding-bottom: 10px;
-margin-bottom: 20px;
-
-
-}
-.orderCard img{
-  width:100% ;
-  height: 95px;
-  margin-bottom: 10px;
-} 
-.projectName{
-  font-size: 12px;
-  font-weight: 500;
-  margin: 0px 0px 0px 10px;
-}
-.projectDescription{
-  font-size: 9px;
-  margin: 0px 0px 0px 10px;
-  padding-right: 10px;
-  color: #6F6F6F;
-  height: 50px;
-  overflow: hidden;
-}
-.orderdata p{
-  font-size: 7px;
-  margin: 3px;
-
-
-}
-/* influincer css */
-.influincerData{
-  margin-left: 10px;
-}
-.influincerData p:nth-child(1){
-  margin: 0px;
-  font-size: 12px;
-  font-weight: 500;
-}
-.influincerData p:nth-child(2){
-  margin: 0px;
-  font-size: 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  color: #8B8B8B;
-  font-weight: 500;
-}
-.influincerData p:nth-child(3){
-  margin: 0px;
-  font-size: 10px;
-  font-weight: 500;
-}
-.InfluinerOrder{
-  background-color: #F6F6F6;
-  border-radius: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.influincerOrderData p:nth-child(1){
-  margin: 0px;
-  font-size: 15px;
-  color: black;
-  font-weight: 500;
-}
-.influincerOrderData p:nth-child(2){
-  margin: 0px;
-  font-size: 18px;
-  color: black;
-  font-weight: 500;
-}
-.influincerOrderData p:nth-child(3){
-  margin: 0px;
-  color: #8B8B8B;
-  font-size: 10px;
-  font-weight: 500;
-}
-.influincerOrderImg {
-  background-color: rgba(121, 95, 194, 0.249);
-  padding: 15px;
-  border-radius: 50px;
-
-}
-.influincerOrderImg img{
-  width: 30px;
-  height: 30px;
-  
-}
-.InfluinecrSocialsData p{
-  margin: 0px;
-  font-size: 12px;
-  font-weight: 500;
-}
-.InfluinecrSocialsImg {
-  background-color: white;
-  border-radius: 10px;
-  margin-right: 10px;
-  padding: 5px;
-}
-.InfluinecrSocialsImg img{
-  width: 50px;
-  height: 40px;
-}
-.InfluinecrSocials{
-  padding: 8px 8px 8px 10px;
-  border-radius: 20px;
-  background-color: rgba(121, 95, 194, 0.249);
-  margin-bottom: 8px;
-}
-.Influincersocialheading{
-  margin-bottom: 5px;
-  font-weight: 500;
-}
-.influincerLikes p:nth-child(1){
-  font-size: 17px;
-  font-weight: 500;
-  margin-bottom: 0px;
-}
-.influincerLikes p:nth-child(2){
-  font-size: 30px;
-  font-weight: 500;
-  margin: 0px;
-}
-.influincerLikes p:nth-child(3){
-  font-size: 12px;
-  font-weight: 200;
-  margin: 0px;
-  color: #25BB00;
-}
-.Chat-Container::-webkit-scrollbar {
-  width: 10px; /* Set the width of the scrollbar */
-  background-color: #D9D9D9;
-  border-radius: 10px;
-}
-.Chat-Container::-webkit-scrollbar-thumb {
-  background-color: #6a50b25f; /* Set the color of the scrollbar thumb */
-  border-radius: 5px; /* Set the border radius of the scrollbar thumb */
-}
-.searchInput{
-  border-radius: 5px 0px 0px 5px;
-  padding-left: 10px;
-  padding-top: 5px;
-  margin-right: 2px;
-}
+ 

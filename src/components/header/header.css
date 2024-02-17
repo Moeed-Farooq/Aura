@@ -63,6 +63,9 @@
     border-radius: 38px;
   
   }
+  .search input:focus{
+    outline: none;
+  }
   .search img{
     position: absolute;
     margin-left: 90%;

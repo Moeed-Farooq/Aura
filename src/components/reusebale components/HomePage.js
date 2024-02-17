@@ -16,6 +16,10 @@ const Homepage = ({ Category3, Category4, name, profile, type, brandname, date, 
     setCurrentPage(1); // Reset to the first page when changing the show count
   };
 
+  const handleDateChange=(e)=>{
+    setCurrentDate(e.target.value);
+  }
+
   const propsdata = {
     name: name,
     profile: profile,
@@ -53,7 +57,7 @@ const Homepage = ({ Category3, Category4, name, profile, type, brandname, date, 
                   <select
                     name="show"
                     id="show"
-                    className='FilterEntries'
+                    className='FilterEntries  text-center'
                     onChange={handleShowChange}
                     value={showCount}
                   >
@@ -67,8 +71,7 @@ const Homepage = ({ Category3, Category4, name, profile, type, brandname, date, 
             </div>
             <div className="col-md-6 pe-4 text-end">
               <button className='FilterBtn'><span className='me-2'><img src={filter} alt="" /></span>Filter</button>
-            <input className='DateBtn' id="dateInput" value={currentDate} type="date"  />
-              {/* <button className='DateBtn'><img src={calender} alt="" /><span>Oct 20,2023</span><img src={dropdown} alt="" /></button> */}
+            <input className='DateBtn' id="dateInput" value={currentDate} type="date"  onChange={handleDateChange} />
             </div>
           </div>
           <hr />

@@ -44,8 +44,12 @@
     border-radius: 5px; /* Set the border radius of the scrollbar thumb */
   }
   .searchInput{
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 10px 10px 10px 10px;
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 0px;
     margin-right: 2px;
+
+  }
+  .searchInput:focus{
+    outline: none;
   }

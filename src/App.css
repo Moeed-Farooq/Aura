@@ -9,6 +9,7 @@
   --muted-purple:#b9aed4;
   --sky-blue:#4F99DD;
   --dark-gray:#8B8B8B;
+  
 }
 
 
@@ -17,6 +18,7 @@ body{
   background-color: var(--white);
   color: var(--black);
   display: block;
+
 }
 
 
@@ -50,10 +52,18 @@ input{
 
 /* chart button css */
 .chart-btn{
-opacity: 30%;
-background-color: var(--purple);
+background-color: #6a50b242 ;
+border: none;
+border-radius: 10px;
 color: var(--white);
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
+
+
+
+
 
 /* css for dashboard starts here */
 .main{
@@ -86,3 +96,22 @@ color: var(--white);
   height: 90px;
  }
  
+
+.progress-container{
+overflow: auto;
+height: 140px;
+}
+.progress-container::-webkit-scrollbar{
+  width: 10px;
+  background-color: #D9D9D9;
+    border-radius: 10px;
+}
+.progress-container::-webkit-scrollbar-thumb{
+  background-color: #6a50b25f;
+  border-radius: 5px;
+}
+
+
+
+
+

@@ -30,8 +30,8 @@ const CreateAdmin = () => {
                 <div className="col-md-2 d-flex align-items-center"><p>Role:</p></div>
                 <div className="col-md-4">
                 <div class="dropdown ">
-  <button class="createAdminBtn w-100 text-start dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span style={{marginRight:"245px"}}>Select Role</span>
+  <button class="createAdminBtn w-100  dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span>Select Role</span>
   </button>
   <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="#">Admin</a>

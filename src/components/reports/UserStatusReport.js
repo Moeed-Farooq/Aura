@@ -58,7 +58,7 @@ const UserStatusReport = () => {
                 placeholder='Search...'
               />
                <button
-                className='position-absolute me-1 bg-white  end-0 translate-middle-y' style={{border:"none",marginTop:"16px"}}
+                className='position-absolute  me-1 rounded-pill bg-white pt-0  end-0 translate-middle-y' style={{border:"none",height:"15px",marginTop:"9px"}}
                 onClick={handleSearchClick}
               >
                 <img src={off} style={{width:"18px",height:"20px"}} className='' alt="" />

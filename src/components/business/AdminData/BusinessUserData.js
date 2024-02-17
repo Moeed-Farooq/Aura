@@ -98,7 +98,7 @@ const BusinessUserData = () => {
                 placeholder='Search...'
               />
               <button
-                className='position-absolute me-1 bg-white  end-0 translate-middle-y' style={{border:"none",marginTop:"16px"}}
+                className='position-absolute  me-1 rounded-pill bg-white pt-0  end-0 translate-middle-y' style={{border:"none",height:"0px",marginTop:"2px"}}
                 onClick={handleSearchClick}
               >
                 <img src={off} style={{width:"20px",height:"20px"}} className='' alt="" />
@@ -125,10 +125,14 @@ const BusinessUserData = () => {
       <div className="row  pt-2 px-4">
         <div className="col-md-12 py-3 bg-white px-3 "  style={{borderRadius:"30px"}}>
         <h4>Orders In Progress</h4>
-           <div className='px-3 my-2'>
+           <div className='progress-container px-3 mt-2' >
             <Progress/>
             <Progress/>
             <Progress/>
+            <Progress/>
+            <Progress/>
+            <Progress/>
+
 
            </div>
         </div>

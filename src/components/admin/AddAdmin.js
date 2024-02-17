@@ -54,7 +54,7 @@ const Business = () => {
             </div>
 
             <div className="col-md-6 text-end">
-              <Link to="/CreateAdmin"><button className='btn AddAdminBtn'>Add Admin</button></Link>
+              <Link to="/CreateAdmin"><button className='AddAdminBtn'>Add Admin</button></Link>
             </div>
           </div>
           <hr />

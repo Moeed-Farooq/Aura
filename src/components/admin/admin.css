@@ -5,6 +5,7 @@
   margin-right: 25px; 
   padding: 5px 20px 5px 20px;
   border-radius: 10px;
+   border: none;
   }
   
    .createAdmin div input{
@@ -14,6 +15,9 @@
    .createAdminBtn{
     background-color: var(--white);
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid var(--sky-blue);
     padding: 5px 20px 5px 20px;
    }

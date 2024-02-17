@@ -1,0 +1,42 @@
+.login-main{
+    background:linear-gradient(#96b4d1,#6A50B2);
+    height: 100vh;
+}
+.login-main img{
+    width: 150px;
+    height: 130px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 0px;
+}
+.formCard{
+   background-color: var(--off-white);
+    border-radius: 30px;
+    width: max-content;
+}
+.formCard h4{
+    color: black;
+}
+
+.loginBtn{
+    background:linear-gradient(#96b4d1,#6A50B2);
+    color: white;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.loginBtn:focus{
+    outline: none;
+}
+.email{
+width: 300px;
+}
+.email:focus{
+ outline: none;
+}
+.password{
+width: 300px;
+}
+.email:focus{
+ outline: none;
+}

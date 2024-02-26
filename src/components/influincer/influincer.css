@@ -8,11 +8,15 @@
     font-size: 12px;
     font-weight: 500;
   }
+  .influincerDataImg{
+    width: 70px;
+    height: 70px;
+  }
   .influincerData p:nth-child(2){
     margin: 0px;
     font-size: 10px;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     color: var(--dark-gray);
     font-weight: 500;
   }
@@ -35,13 +39,13 @@
   }
   .influincerOrderData p:nth-child(1){
     margin: 0px;
-    font-size: 15px;
+    font-size: 13px;
     color: var(--black);
     font-weight: 500;
   }
   .influincerOrderData p:nth-child(2){
     margin: 0px;
-    font-size: 18px;
+    font-size: 15px;
     color: var(--black);
     font-weight: 500;
   }
@@ -62,9 +66,12 @@
     height: 30px;
     
   }
+  .InfluinecrSocials{
+    margin: 0px;
+  }
   .InfluinecrSocialsData p{
     margin: 0px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
   }
   .InfluinecrSocialsImg {
@@ -88,12 +95,12 @@
     font-weight: 500;
   }
   .influincerLikes p:nth-child(1){
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 500;
     margin-bottom: 0px;
   }
   .influincerLikes p:nth-child(2){
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     margin: 0px;
   }

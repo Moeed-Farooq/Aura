@@ -3,7 +3,7 @@
 .orderCard{
     border-radius: 25px;
     width: 100%;
-    height: 270px;
+    height: 240px;
     overflow: hidden;
     background-color: var(--white);
     padding-bottom: 10px;
@@ -13,8 +13,8 @@
     }
     .orderCard img{
       width:100% ;
-      height: 95px;
-      margin-bottom: 10px;
+      height: 85px;
+      margin-bottom: 5px;
     } 
     .projectName{
       font-size: 12px;
@@ -26,12 +26,13 @@
       margin: 0px 0px 0px 10px;
       padding-right: 10px;
       color: #6F6F6F;
-      height: 50px;
+      height: 40px;
       overflow: hidden;
     }
     .orderdata p{
       font-size: 7px;
       margin: 3px;
+      font-weight: 500;
     
     
     }

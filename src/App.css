@@ -115,3 +115,7 @@ height: 140px;
 
 
 
+/* progress-container css  */
+.progress-container p{
+font-size: 10px;
+}

@@ -1,12 +1,12 @@
-import React from 'react';
-import './sidebar.css'
-import reports from '../images/reports.png';
-import verification from '../images/verification.png';
-import payouts from '../images/payouts.png';
-import addadmin from '../images/addadmin.png';
-import influencer from '../images/influencer.png';
-import business from '../images/business.png';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import "./sidebar.css";
+import reports from "../images/reports.png";
+import verification from "../images/verification.png";
+import payouts from "../images/payouts.png";
+import addadmin from "../images/addadmin.png";
+import influencer from "../images/influencer.png";
+import business from "../images/business.png";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -23,8 +23,15 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/verification" activeClassName="active-link">
+          <NavLink
+            to="/verification"
+            style={{ display: "flex", alignItems: "center" }}
+            activeClassName="active-link"
+          >
             <img src={verification} alt="" /> Verification
+            <span className="verification-span">
+              <p className="rounded-circle">15</p>
+            </span>
           </NavLink>
         </li>
         <li>
@@ -45,6 +52,6 @@ const Sidebar = () => {
       </ul>
     </div>
   );
-}
+};
 
 export default Sidebar;

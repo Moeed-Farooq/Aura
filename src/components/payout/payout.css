@@ -55,7 +55,7 @@
     background-color: var(--white);
     margin-top: 15px;
   padding-top: 10px;
-  
+height: 49%;  
     border-radius: 30px;
   }
   .payoutHistoryImg img{
@@ -82,22 +82,27 @@
   .paymentMethod{
     border-radius: 20px;
     background-color: var(--white);
+   height: 100%;
     padding: 20px;
+    
+  }
+  .PayoutpaymentMethod{
+    height: 50%;
   }
   .paymentMethod p{
-    font-size:20px ;
+    font-size:15px ;
     font-weight: 500;
     margin-bottom: 5px;
     margin-top: 5px;
   }
   .paymentData p:nth-child(1){
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     margin: 0px;
     color: var(--dark-gray);
   }
   .paymentData p:nth-child(2){
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     margin: 0px;
   }

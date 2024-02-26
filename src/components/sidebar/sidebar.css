@@ -25,4 +25,13 @@
     font-family: 'Poppins', sans-serif;
   
    }
+   
+  .verification-span p{
+    font-size: 10px;
+    color: white;
+    background-color: red;
+    margin: 3px 0px 0px 4px;
+    border: 1px solid white;
+    padding: 2px 4px 0px 4px;
+  }
   

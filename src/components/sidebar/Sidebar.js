@@ -5,50 +5,86 @@ import verification from "../images/verification.png";
 import payouts from "../images/payouts.png";
 import addadmin from "../images/addadmin.png";
 import influencer from "../images/influencer.png";
+import businessActive from "../images/BusinessActive.png";
+import influencerActive from "../images/influincerActive.png";
+import verificationActive from "../images/verificationActive.png";
+import reportsActive from "../images/reportsActive.png";
+import addadminActive from "../images/adminActive.png";
+import payoutsActive from "../images/payoutActive.png";
+
 import business from "../images/business.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+
+// ... (imports and other code)
 
 const Sidebar = () => {
+  const location = useLocation();
+
+  // Define the list of links and their corresponding paths and images
+  const links = [
+    {
+      to: "/",
+      label: "Businesses",
+      icon: business,
+      activeIcon: businessActive,
+    },
+    {
+      to: "/influincer",
+      label: "Influencer",
+      icon: influencer,
+      activeIcon: influencerActive,
+    },
+    {
+      to: "/verification",
+      label: "Verification",
+      icon: verification,
+      activeIcon: verificationActive,
+    },
+    {
+      to: "/reports",
+      label: "Reports",
+      icon: reports,
+      activeIcon: reportsActive,
+    },
+    {
+      to: "/addadmin",
+      label: "Add Admin",
+      icon: addadmin,
+      activeIcon: addadminActive,
+    },
+    {
+      to: "/payouts",
+      label: "Payouts",
+      icon: payouts,
+      activeIcon: payoutsActive,
+    },
+  ];
+
   return (
     <div className="sideNavbar">
       <ul>
-        <li>
-          <NavLink to="/" activeClassName="active-link">
-            <img src={business} alt="" /> Businesses
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/influincer" activeClassName="active-link">
-            <img src={influencer} alt="" /> Influencer
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/verification"
-            style={{ display: "flex", alignItems: "center" }}
-            activeClassName="active-link"
-          >
-            <img src={verification} alt="" /> Verification
-            <span className="verification-span">
-              <p className="rounded-circle">15</p>
-            </span>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/reports" activeClassName="active-link">
-            <img src={reports} alt="" /> Reports
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/addadmin" activeClassName="active-link">
-            <img src={addadmin} alt="" /> Add Admin
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/payouts" activeClassName="active-link">
-            <img src={payouts} alt="" /> Payouts
-          </NavLink>
-        </li>
+        {links.map((link, index) => (
+          <li key={index}>
+            <NavLink
+              style={{
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: "20px",
+              }}
+              to={link.to}
+              className={location.pathname === link.to ? "active-link" : ""}
+            >
+              <img
+                className="png-image"
+                src={
+                  location.pathname === link.to ? link.activeIcon : link.icon
+                }
+                alt=""
+              />
+              <p className="m-0 p-0">{link.label}</p>
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </div>
   );

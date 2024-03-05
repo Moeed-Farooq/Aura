@@ -124,7 +124,7 @@ const PayoutHistoryCard = ({ onComponentChange }) => {
     <>
       {payoutData.map((data, index) => (
         <div
-          className="row  payoutContainer "
+          className="row payoutContainer "
           onClick={() => onComponentChange("PayoutpaymentMethod")}
           key={index}
         >

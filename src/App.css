@@ -81,6 +81,15 @@ align-items: center;
   background-color: var(--white) ;
   padding: 0px 10px 10px 10px;
 }
+
+@media (max-width: 1500px) {
+  .sidebar{
+    width: 20%;
+  }
+  .components{
+    width: 80%;
+  }
+}
 /* css for dashboard ends here */
 
 
@@ -91,10 +100,13 @@ align-items: center;
  display: flex;
  justify-content: center;
   border-radius: 100%;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
  }
- 
+ .orders img{
+  width: 40px;
+  height: 40px;
+ }
 
 .progress-container{
 overflow: auto;
@@ -109,6 +121,7 @@ height: 140px;
   background-color: #6a50b25f;
   border-radius: 5px;
 }
+
 
 
 

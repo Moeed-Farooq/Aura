@@ -29,16 +29,34 @@
   transition: color 0.3s; /* Add a transition for a smooth color change */
 }
 
-.verification-notification p {
-  font-size: 9px;
-  color: white;
-  margin: 0;
-  padding: 2px 4px;
+.verification-notification  {
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  margin: 4px 0 0 4px;
   background-color: red;
-  border: 1px solid white;
+  padding-top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2px;
 }
+.verification-notification p{
+  font-size: 10px;
+  margin: 0px;
+  height: max-content;
+}
+/* .verification-notification img{
+  width: 20px;
+  height: 20px;
+}
+
+.verification-notification p{
+font-size: 10px;
+margin: 0px;
+margin-left: 5px;
+position: absolute;
+} */
+
 
 .active-link {
   background-color: white;
@@ -54,3 +72,13 @@
 
 
 
+@media only screen and (max-width: 1500px) {
+  /* .sideNavbar ul li a {
+    font-size: 15px;
+  }
+  .sideNavbar ul li img {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+  } */
+}

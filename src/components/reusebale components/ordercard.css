@@ -2,36 +2,151 @@
 /* ordercard css */
 .orderCard{
     border-radius: 25px;
-    width: 100%;
-    height: 240px;
+    width: 95%;
+    height: 230px;
     overflow: hidden;
     background-color: var(--white);
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     
     
     }
+    .orderCardImg{
+      width: 100%;
+      height: 90px;
+     
+    }
     .orderCard img{
       width:100% ;
-      height: 85px;
+      height: 100%;
+      object-fit: cover;
       margin-bottom: 5px;
     } 
     .projectName{
       font-size: 12px;
       font-weight: 500;
-      margin: 0px 0px 0px 10px;
+      margin: 5px 0px 0px 10px;
     }
     .projectDescription{
-      font-size: 9px;
+      font-size: 11px;
       margin: 0px 0px 0px 10px;
       padding-right: 10px;
       color: #6F6F6F;
-      height: 40px;
+      height: 35px;
       overflow: hidden;
     }
+    .orderdata{
+      padding: 0px 15px 0px 15px;
+    }
     .orderdata p{
-      font-size: 8px;
-      margin: 3px;
+      font-size: 11px;
+      margin: 0px;
       font-weight: 500;
     }
     
+    @media screen and (min-width: 1500px) {
+      .orderCard{
+        width: 95%;
+        height: 265px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        }
+        .orderCardImg{
+          height: 100px;
+        }
+        .orderdata p{
+          font-size: 12px;
+          margin: 0px;
+          font-weight: 500;
+          margin-top: 3px;
+        }
+        .projectName{
+          font-size: 12px;
+          margin: 5px 0px 0px 10px;
+        }
+        .projectDescription{
+          font-size: 11px;
+          margin: 0px 0px 0px 10px;
+          height: 35px;
+        }
+    }
+    @media screen and (min-width: 1650px) {
+      .orderCard{
+        width: 95%;
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+        .orderCardImg{
+          width: 100%;
+          height: 120px;
+        }
+        .orderdata p{
+          font-size: 13px;
+          margin: 0px;
+          font-weight: 500;
+          margin-top: 3px;
+        }
+        .projectName{
+          font-size: 13px;
+          margin: 5px 0px 0px 10px;
+        }
+        .projectDescription{
+          font-size: 13px;
+          margin: 0px 0px 0px 10px;
+          height: 40px;
+        }
+    }
+
+    @media screen and (min-width: 1800px) {
+      .orderCard{      
+        height: 340px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        }
+        .orderCardImg{
+          width: 100%;
+          height: 140px;
+        }
+        
+        .orderdata p{
+          font-size: 14px;
+          margin: 0px;
+          margin-top: 5px;
+        }
+        .projectName{
+          font-size: 15px;
+          margin: 5px 0px 0px 10px;
+        }
+        .projectDescription{
+          font-size: 13px;
+          margin: 0px 0px 0px 10px;
+          height: 40px;
+        }
+    }
+
+    
+    @media screen and (min-width: 2000px) {
+      .orderCard{      
+        height: 350px;
+        margin-top: 14px;
+        margin-bottom: 14px;
+        }
+        .orderCardImg{
+          width: 100%;
+          height: 150px;
+        }
+        
+        .orderdata p{
+          font-size: 14px;
+          margin-top: 6px;
+        }
+        .projectName{
+          font-size: 14px;
+        }
+        .projectDescription{
+          font-size: 13px;
+          height: 40px;
+        }
+    }

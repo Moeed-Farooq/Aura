@@ -1,7 +1,7 @@
 import React from "react";
 import listicon from "../images/listicon.png";
 
-const HomeCard = ({ profile, name, brandname, date, type }) => {
+const HomeCard = ({ profile, id, brandname, raised, type }) => {
   return (
     <>
       <div className="row main-items mx-3 mt-2">
@@ -16,11 +16,11 @@ const HomeCard = ({ profile, name, brandname, date, type }) => {
                 alt=""
               />
             </span>{" "}
-            {name}
+            {id}
           </p>
         </div>
         <div className="col-md-2 text-start">
-          <p>{date}</p>
+          <p>{raised}</p>
         </div>
         <div className="col-md-2">
           <p>{brandname}</p>

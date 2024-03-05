@@ -7,17 +7,17 @@
   }
   .UserPayout-sectoion2{
     width: 25%;
-    height: 100vh;
-    padding: 20px;
+    height: 100%;
+    padding: 20px 20px 10px 20px;
   }
   .payoutHistory{
-    height: 88%;
+    height: 100%;
     border-radius: 30px;
     padding: 15px;
   }
   .PayoutScroll{
     overflow: auto;
-    height: 90%;
+    height: 88%;
     overflow-x: hidden;
     padding-right: 10px;
     padding-left: 10px;
@@ -78,7 +78,7 @@ height: 49%;
     border-radius: 20px;
     background-color: var(--white);
    height: 100%;
-    padding: 20px;
+    padding: 0px 20px 0px 20px ;
     
   }
   .PayoutpaymentMethod{

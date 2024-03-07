@@ -16,11 +16,11 @@ const HomeCard = ({ profile, id, brandname, raised, type }) => {
                 alt=""
               />
             </span>{" "}
-            {id}
+            {raised}
           </p>
         </div>
         <div className="col-md-2 text-start">
-          <p>{raised}</p>
+          <p>{id}</p>
         </div>
         <div className="col-md-2">
           <p>{brandname}</p>
@@ -32,7 +32,35 @@ const HomeCard = ({ profile, id, brandname, raised, type }) => {
           className="col-md-2  justify-content-end action d-flex align-items-center "
           style={{ paddingRight: "35px" }}
         >
-          <img src={listicon} alt="" />
+          <div class="dropdown p-0">
+            <button
+              class=" bg-white"
+              style={{ border: "none" }}
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src={listicon} />
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">
+                  Action
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Another action
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

@@ -5,10 +5,10 @@ import "./payout.css";
 
 const Reports = () => {
   const data = {
-    id: "Anderson",
+    raised: "Anderson",
     profile: profile,
     brandname: "03:00 am",
-    raised: "31 oct 2024",
+    id: "56273",
     type: "$400",
     Category3: "Type",
     Category4: "Transaction",

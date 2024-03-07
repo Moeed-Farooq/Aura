@@ -5,10 +5,10 @@ import "./verification.css";
 
 const Verification = () => {
   const data = {
-    id: "Anderson",
+    raised: "Anderson",
     profile: profile,
     brandname: "name",
-    raised: "31 oct 2024",
+    id: "31273",
     type: "Fashion",
     Category3: "Type",
     Category4: "Status",

@@ -4,10 +4,10 @@ import profile from "../images/profile.png";
 
 const Infulincer = () => {
   const data = {
-    id: "Anderson",
+    raised: "Anderson",
     profile: profile,
     brandname: "Male",
-    raised: "31 oct 2024",
+    id: "23423",
     type: "Fashion",
     Category3: "Gender",
     Category4: "Category",

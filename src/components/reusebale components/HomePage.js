@@ -17,14 +17,26 @@ const Homepage = ({
   const [showCount, setShowCount] = useState(6);
   const [currentPage, setCurrentPage] = useState(1);
   const [currentDate, setCurrentDate] = useState("");
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
+  const [selectingEndDate, setSelectingEndDate] = useState(false);
 
+  const handleDateChange = (e) => {
+    const selectedDate = e.target.value;
+
+    if (!selectingEndDate) {
+      // First interaction: Set the start date
+      setStartDate(selectedDate);
+      setSelectingEndDate(true);
+    } else {
+      // Second interaction: Set the end date
+      setEndDate(selectedDate);
+      setSelectingEndDate(false);
+    }
+  };
   const handleShowChange = (event) => {
     setShowCount(parseInt(event.target.value, 10));
     setCurrentPage(1);
-  };
-
-  const handleDateChange = (e) => {
-    setCurrentDate(e.target.value);
   };
 
   const handleResize = () => {
@@ -104,19 +116,32 @@ const Homepage = ({
               <input
                 className="DateBtn"
                 id="dateInput"
-                value={currentDate}
                 type="date"
+                value={startDate || ""}
                 onChange={handleDateChange}
               />
+
+              {startDate && !selectingEndDate && (
+                <span>
+                  {" - "}
+                  <input
+                    className="DateBtn"
+                    id="endDateInput"
+                    type="date"
+                    value={endDate || ""}
+                    onChange={handleDateChange}
+                  />
+                </span>
+              )}
             </div>
           </div>
           <hr />
           <div className="row main-labels mx-3">
             <div className="col-md-3 text-start ps-5 name">
-              <p>ID</p>
+              <p>Raised By</p>
             </div>
             <div className="col-md-2 text-start">
-              <p>Raised By</p>
+              <p>ID</p>
             </div>
             <div className="col-md-2">
               <p>{Category3}</p>
@@ -137,51 +162,6 @@ const Homepage = ({
             </Link>
           ))}
           {/* main footer */}
-          <div className="row px-5 d-flex mt-3">
-            <div className="col-md-6 ps-3">
-              <p>
-                Showing {Math.min(showCount * currentPage, 15)} of 15 entries
-              </p>
-            </div>
-            <div className="col-md-6 d-flex justify-content-end pagination-buttons">
-              <button
-                className="pagination-button"
-                onClick={handlePreviousPage}
-                disabled={currentPage === 1}
-              >
-                Previous
-              </button>
-              {totalPages > 1 && (
-                <>
-                  <button
-                    onClick={() => setCurrentPage(1)}
-                    className={`pagination-button ${
-                      currentPage === 1 ? "active-page" : ""
-                    }`}
-                    disabled={currentPage === 1}
-                  >
-                    1
-                  </button>
-                  <button
-                    onClick={() => setCurrentPage(2)}
-                    className={`pagination-button ${
-                      currentPage === 2 ? "active-page" : ""
-                    }`}
-                    disabled={currentPage === 2}
-                  >
-                    2
-                  </button>
-                </>
-              )}
-              <button
-                className="pagination-button"
-                onClick={handleNextPage}
-                disabled={currentPage === totalPages}
-              >
-                Next
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </>

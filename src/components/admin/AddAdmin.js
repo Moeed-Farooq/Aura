@@ -101,7 +101,7 @@ const Business = () => {
             </Link>
           ))}
           {/* main footer */}
-          <div className="row px-5 d-flex mt-3">
+          {/* <div className="row px-5 d-flex mt-3">
             <div className="col-md-6 ps-3">
               <p>
                 Showing {Math.min(showCount * currentPage, 15)} of 15 entries
@@ -143,7 +143,7 @@ const Business = () => {
                 Next
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

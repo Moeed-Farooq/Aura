@@ -4,10 +4,10 @@ import HomePage from "../reusebale components/HomePage";
 
 const Business = () => {
   const data = {
-    id: "Anderson",
+    raised: "Anderson",
     profile: profile,
     brandname: "Influincer",
-    raised: "31 oct 2024",
+    id: "91728",
     type: "Active",
     Category3: "Type",
     Category4: "Status",

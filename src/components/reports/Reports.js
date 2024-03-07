@@ -5,10 +5,10 @@ import "./report.css";
 
 const Reports = () => {
   const data = {
-    id: "Anderson",
+    raised: "Anderson",
     profile: profile,
     brandname: "03:00 am",
-    raised: "31 oct 2024",
+    id: "31362",
     type: "James Walter",
     Category3: "Type",
     Category4: "Status",

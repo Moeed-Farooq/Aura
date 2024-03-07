@@ -1,24 +1,24 @@
-import React from 'react';
-import profile from '../images/profile.png'
-import HomePage from '../reusebale components/HomePage';
-import './verification.css'
+import React from "react";
+import profile from "../images/profile.png";
+import HomePage from "../reusebale components/HomePage";
+import "./verification.css";
 
 const Verification = () => {
   const data = {
-    name: "Anderson",
+    id: "Anderson",
     profile: profile,
     brandname: "name",
-    date: "31 oct 2024",
+    raised: "31 oct 2024",
     type: "Fashion",
-    Category3:" Brand Name",
-    Category4:"Category",
-    link:"/UserVerification",
+    Category3: "Type",
+    Category4: "Status",
+    link: "/UserVerification",
   };
   return (
     <>
-    <HomePage {...data} />
+      <HomePage {...data} />
     </>
   );
-}
+};
 
 export default Verification;

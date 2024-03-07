@@ -14,11 +14,11 @@ const Business = () => {
   };
   const handleResize = () => {
     if (window.innerWidth < 1500) {
-      setShowCount(6);
+      setShowCount(5);
     } else if (window.innerWidth < 1800) {
-      setShowCount(7);
+      setShowCount(6);
     } else if (window.innerWidth < 2000) {
-      setShowCount(9);
+      setShowCount(8);
     }
   };
 

@@ -1,24 +1,24 @@
-import React from 'react';
-import profile from '../images/profile.png'
-import HomePage from '../reusebale components/HomePage';
-import './payout.css'
+import React from "react";
+import profile from "../images/profile.png";
+import HomePage from "../reusebale components/HomePage";
+import "./payout.css";
 
 const Reports = () => {
   const data = {
-    name: "Anderson",
+    id: "Anderson",
     profile: profile,
     brandname: "03:00 am",
-    date: "31 oct 2024",
+    raised: "31 oct 2024",
     type: "$400",
-    Category3:"Time",
-    Category4:"Transaction",
-    link:"/UserPayout",
+    Category3: "Type",
+    Category4: "Transaction",
+    link: "/UserPayout",
   };
   return (
     <>
-    <HomePage {...data} />
+      <HomePage {...data} />
     </>
   );
-}
+};
 
 export default Reports;

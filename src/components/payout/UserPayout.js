@@ -22,7 +22,11 @@ const UserPayout = () => {
           <div className="UserPayout-sectoion1">
             <div
               className="col-md-12 bg-white p-3 "
-              style={{ borderRadius: "20px", height: "50%" }}
+              style={{
+                borderRadius: "20px",
+                height: "50%",
+                overflow: "hidden",
+              }}
             >
               <div className="row">
                 <div className="col-md-2 ms-3">

@@ -34,7 +34,7 @@ const BusinessUserData = () => {
                   <img src={profile} width={75} height={75} alt="" />
                 </div>
                 <div className="bio">
-                  <h4 className="m-0 p-0 mb-1 ">Hazel Finch</h4>
+                  <h5 className="m-0 p-0 mb-1 ">Hazel Finch</h5>
                   <p
                     className="m-0 p-0 "
                     style={{ fontSize: "13px", fontWeight: "500" }}
@@ -66,8 +66,8 @@ const BusinessUserData = () => {
                   style={{ borderRadius: "30px", height: "100%" }}
                 >
                   <div>
-                    <h4 className="m-0 text-dark">Cancelled Orders</h4>
-                    <h4 className="m-1 text-dark">27</h4>
+                    <h5 className="m-0 text-dark">Cancelled Orders</h5>
+                    <h5 className="m-1 text-dark">27</h5>
                     <p className="m-0" style={{ color: "#8B8B8B" }}>
                       Order this month
                     </p>
@@ -88,8 +88,8 @@ const BusinessUserData = () => {
                   style={{ borderRadius: "30px", height: "100%" }}
                 >
                   <div>
-                    <h4 className="m-0 text-dark">Completed Orders</h4>
-                    <h4 className="m-1 text-dark">27</h4>
+                    <h5 className="m-0 text-dark">Completed Orders</h5>
+                    <h5 className="m-1 text-dark">27</h5>
                     <p className="m-0" style={{ color: "#8B8B8B" }}>
                       Order this month
                     </p>

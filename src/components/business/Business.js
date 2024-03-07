@@ -1,23 +1,23 @@
-import React from 'react';
-import profile from '../images/profile.png'
-import HomePage from '../reusebale components/HomePage';
+import React from "react";
+import profile from "../images/profile.png";
+import HomePage from "../reusebale components/HomePage";
 
 const Business = () => {
   const data = {
-    name: "Anderson",
+    id: "Anderson",
     profile: profile,
-    brandname: "name",
-    date: "31 oct 2024",
-    type: "Fashion",
-    Category3:" Brand Name",
-    Category4:"Category",
-    link:"/BusinessUser",
+    brandname: "Influincer",
+    raised: "31 oct 2024",
+    type: "Active",
+    Category3: "Type",
+    Category4: "Status",
+    link: "/BusinessUser",
   };
   return (
     <>
-    <HomePage {...data} />
+      <HomePage {...data} />
     </>
   );
-}
+};
 
 export default Business;

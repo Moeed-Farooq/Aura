@@ -7,11 +7,11 @@ import "./homepage.css";
 const Homepage = ({
   Category3,
   Category4,
-  name,
+  id,
   profile,
   type,
   brandname,
-  date,
+  raised,
   link,
 }) => {
   const [showCount, setShowCount] = useState(6);
@@ -30,19 +30,19 @@ const Homepage = ({
   const handleResize = () => {
     // Adjust showCount based on the window width
     if (window.innerWidth < 1500) {
-      setShowCount(6);
+      setShowCount(5);
     } else if (window.innerWidth < 1800) {
-      setShowCount(7);
+      setShowCount(6);
     } else if (window.innerWidth < 2000) {
-      setShowCount(9);
+      setShowCount(8);
     }
   };
 
   const propsdata = {
-    name: name,
+    id: id,
     profile: profile,
     brandname: brandname,
-    date: date,
+    raised: raised,
     type: type,
   };
 
@@ -113,10 +113,10 @@ const Homepage = ({
           <hr />
           <div className="row main-labels mx-3">
             <div className="col-md-3 text-start ps-5 name">
-              <p>Name</p>
+              <p>ID</p>
             </div>
             <div className="col-md-2 text-start">
-              <p>Date</p>
+              <p>Raised By</p>
             </div>
             <div className="col-md-2">
               <p>{Category3}</p>

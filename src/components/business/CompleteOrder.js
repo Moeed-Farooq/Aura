@@ -67,13 +67,13 @@ const CompleteOrder = () => {
       <div className="main-container">
         <div className="container-fluid m-0 p-0">
           <div className="row pt-4 px-4 d-flex">
-            <p style={{ fontSize: "20px", fontWeight: "500" }}>
+            <p style={{ fontSize: "20px", fontWeight: "500", margin: "0px" }}>
               Completed Orders
             </p>
 
             {/* Map over completedOrders array to render OrderCard components */}
             {completedOrders.map((order, index) => (
-              <div className="col-md-2" key={index}>
+              <div className="col-md-3" key={index}>
                 <OrderCard
                   ProjectName={order.projectName}
                   projectImg={order.projectImg}

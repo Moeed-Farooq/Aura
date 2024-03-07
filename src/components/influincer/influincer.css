@@ -15,8 +15,8 @@
   .influincerData p:nth-child(2){
     margin: 0px;
     font-size: 10px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 1px;
+    margin-bottom: 1px;
     color: var(--dark-gray);
     font-weight: 500;
   }
@@ -27,12 +27,12 @@
   }
   .InfluinerOrder{
     background-color: var(--off-white);
-    border-radius: 30px;
+    border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,8 +62,8 @@
   
   }
   .influincerOrderImg img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     
   }
   .InfluinecrSocials{
@@ -71,18 +71,22 @@
   }
   .InfluinecrSocialsData p{
     margin: 0px;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 500;
   }
   .InfluinecrSocialsImg {
     background-color: var(--white);
     border-radius: 10px;
     margin-right: 10px;
+    width: 40px;
+    height: 40px;
     padding: 5px;
   }
   .InfluinecrSocialsImg img{
-    width: 50px;
-    height: 40px;
+    height: 100%;
+    width: 100%;
+   
+    object-fit: cover;
   }
   .InfluinecrSocials{
     padding: 8px 8px 8px 10px;
